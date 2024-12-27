@@ -1,0 +1,97 @@
+.header-bg {
+  background-color: var(--cor-n0);
+}
+
+.header {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.header h1 a {
+  font: 700 2.5rem/1 "Cormorant Garamond", serif;
+  color: var(--cor-n10);
+}
+
+/* Menu do nosso Header */
+.header-menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.header-menu a {
+  display: inline-block;
+  color: var(--cor-n10);
+  padding: 10px 0px;
+  position: relative;
+  font-size: 1rem;
+}
+
+.header-menu a:hover {
+  opacity: 0.95;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: var(--cor-linear);
+  height: 3px;
+  width: 0;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after{
+  width: 101%;
+}
+
+/* Cria os botões no menu */
+
+@media(max-width: 850px) {
+  .header-menu{
+    gap: 25px;
+  }
+  .header-menu a{
+    padding: 6px 12px;
+    background-color: var(--cor-n1);
+    border-radius: 10px;
+  }
+  .header-menu a::after{
+    display: none;
+  }
+}
+
+/* Quebra o menu para baixo do título */
+@media(max-width: 700px){
+  .header {
+    display: flex;
+    justify-content: center;
+    gap: 40px;;
+  }
+  .header h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Diminuir letra para o Mobile */
+@media(max-width: 450px){
+  .header {
+    gap: 28px;
+  }
+  .header h1 a {
+    font-size: 2rem;
+  }
+  .header-menu{
+    gap: 10px;
+  }
+  .header-menu a {
+    font-size: 0.7rem;
+  }
+}
