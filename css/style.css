@@ -5,3 +5,7 @@
 
 /* Componentes */
 @import "/css/componentes/header.css";
+@import "/css/componentes/button.css";
+
+/* Pages */
+@import "/css/pages/home.css";

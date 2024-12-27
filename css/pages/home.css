@@ -1,0 +1,40 @@
+.sobre-bg{
+  background-color: var(--cor-n1);
+  padding: 20vh 0;
+}
+
+.sobre{
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 140px;
+}
+
+.introducao-conteudo{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.introducao-conteudo h1{
+  display: inline-block;
+  font: 800 4rem/1 "Poppins", sans-serif;
+  position: relative;
+}
+
+.introducao-conteudo h1::after{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 20%;
+  background-image: var(--cor-linear);
+  position: absolute;
+  margin-top: 5px;
+  left: 4px;
+}
+
+.introducao-conteudo p {
+  font: 400 1.25rem/1.5 "Poppins", sans-serif;
+  max-width: 600px;
+}

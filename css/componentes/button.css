@@ -1,0 +1,11 @@
+.btn{
+  display: flex;
+  gap: 12px;
+
+}
+
+.btn p {
+  font: 500 1.2rem/1 "Poppins", sans-serif;
+  color: var(--cor-p1);
+}
+
