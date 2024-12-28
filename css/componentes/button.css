@@ -21,3 +21,14 @@
 .btn:hover {
   opacity: 0.6;
 }
+
+@media(max-width: 450px) {
+  .btn{
+    gap: 10px;
+    padding: 11px 20px;
+  }
+  .btn svg{
+    height: 15px;
+    width: 18px;
+  }
+}

@@ -1,5 +1,5 @@
 .sobre-bg{
-  background-color: var(--cor-n1);
+  background-color: var(--cor-n0);
   padding: 20vh 0;
 }
 
@@ -10,20 +10,20 @@
   gap: 0px 140px;
 }
 
-.introducao-conteudo{
+.sobre-conteudo{
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: flex-start;
 }
 
-.introducao-conteudo h1{
+.sobre-conteudo h1{
   display: inline-block;
   font: 800 4rem/1 "Poppins", sans-serif;
   position: relative;
 }
 
-.introducao-conteudo h1::after{
+.sobre-conteudo h1::after{
   content: "";
   display: block;
   height: 5px;
@@ -34,7 +34,7 @@
   left: 4px;
 }
 
-.introducao-conteudo p {
+.sobre-conteudo p {
   font: 400 1.25rem/1.5 "Poppins", sans-serif;
   max-width: 600px;
 }
@@ -59,17 +59,89 @@
 
 
 /* Minha foto */
-.introducao-foto {
+.sobre-foto {
   display: inline-block;
-  height: 100%;
+  height: 500px;
   width: 500px;
 }
 
-.introducao-foto img {
+.sobre-foto img {
   display: block;
-  max-height: 500px;
+  max-height: 100%;
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  ;
+  border: solid 5px #AC3AFF ;
+}
+
+/* Diminuir tamanho dos elementos */
+@media(max-width: 1200px){
+  .sobre-conteudo{
+    gap: 40px;
+  }
+  .sobre-conteudo h1{
+    font-size: 3rem;
+  }
+  .sobre-conteudo p{
+    font-size: 1rem;
+  }
+  .sobre-foto {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Colocar todos os elementos em apenas uma coluna*/
+@media(max-width: 960px){
+  .sobre-bg {
+    padding: 15vh 0vh;
+  }
+  .sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+/* Diminui os conteúdos para nao estourar o container*/
+@media(max-width: 600px){
+  .sobre-foto{
+    height: 300px;
+    width: 300px;
+  }
+  .sobre-conteudo h1{
+    font-size: 2.5rem;
+  }
+  .sobre-conteudo p{
+    font-size: 0.75rem;
+  }
+}
+
+/* Adaptação dos componentes para o mobile  */
+@media(max-width: 450px){
+  .sobre-bg{
+    padding: 10vh 0;
+  }
+  .sobre{
+    gap: 75px;
+  }
+  .sobre-foto{
+    height: 220px;
+    width: 220px;
+  }
+  .sobre-conteudo h1{
+    font-size: 2rem;
+  }
+  .sobre-conteudo p{
+    font-size: 0.7rem;
+  }
+  .social-media ul{
+    gap: 30px;
+  }
+  .social-media ul svg{
+    height: 30px;
+    width: 30px;
+  }
 }
