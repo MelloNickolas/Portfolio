@@ -38,3 +38,38 @@
   font: 400 1.25rem/1.5 "Poppins", sans-serif;
   max-width: 600px;
 }
+
+/* Social Medias */
+.social-media ul{
+  display: flex;
+  gap: 40px;
+
+}
+
+.social-media ul svg{
+  height: 40px;
+  width: 40px;
+  fill: #AC3AFF;
+}
+
+.social-media ul svg:hover{
+  opacity: 0.5;
+}
+
+
+
+/* Minha foto */
+.introducao-foto {
+  display: inline-block;
+  height: 100%;
+  width: 500px;
+}
+
+.introducao-foto img {
+  display: block;
+  max-height: 500px;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  ;
+}

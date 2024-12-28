@@ -1,11 +1,23 @@
-.btn{
+.btn {
   display: flex;
   gap: 12px;
-
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  background-image: var(--cor-linear);
+  border-radius: 10px;
 }
+
 
 .btn p {
   font: 500 1.2rem/1 "Poppins", sans-serif;
   color: var(--cor-p1);
 }
 
+.btn svg {
+  fill: var(--cor-p1) !important;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
