@@ -1,29 +1,29 @@
-.sobre-bg{
+.sobre-bg {
   background-color: var(--cor-n0);
   padding: 20vh 0;
 }
 
-.sobre{
+.sobre {
   padding: 0 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 140px;
 }
 
-.sobre-conteudo{
+.sobre-conteudo {
   display: flex;
   flex-direction: column;
   gap: 60px;
   align-items: flex-start;
 }
 
-.sobre-conteudo h1{
+.sobre-conteudo h1 {
   display: inline-block;
   font: 800 4rem/1 "Poppins", sans-serif;
   position: relative;
 }
 
-.sobre-conteudo h1::after{
+.sobre-conteudo h1::after {
   content: "";
   display: block;
   height: 5px;
@@ -40,19 +40,19 @@
 }
 
 /* Social Medias */
-.social-media ul{
+.social-media ul {
   display: flex;
   gap: 40px;
 
 }
 
-.social-media ul svg{
+.social-media ul svg {
   height: 40px;
   width: 40px;
   fill: #AC3AFF;
 }
 
-.social-media ul svg:hover{
+.social-media ul svg:hover {
   opacity: 0.5;
 }
 
@@ -71,20 +71,23 @@
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: solid 5px #AC3AFF ;
+  border: solid 5px #AC3AFF;
 }
 
 /* Diminuir tamanho dos elementos */
-@media(max-width: 1200px){
-  .sobre-conteudo{
+@media(max-width: 1200px) {
+  .sobre-conteudo {
     gap: 40px;
   }
-  .sobre-conteudo h1{
+
+  .sobre-conteudo h1 {
     font-size: 3rem;
   }
-  .sobre-conteudo p{
+
+  .sobre-conteudo p {
     font-size: 1rem;
   }
+
   .sobre-foto {
     height: 400px;
     width: 400px;
@@ -92,10 +95,11 @@
 }
 
 /* Colocar todos os elementos em apenas uma coluna*/
-@media(max-width: 960px){
+@media(max-width: 960px) {
   .sobre-bg {
     padding: 15vh 0vh;
   }
+
   .sobre {
     display: flex;
     flex-direction: column-reverse;
@@ -106,42 +110,171 @@
 }
 
 /* Diminui os conteúdos para nao estourar o container*/
-@media(max-width: 600px){
-  .sobre-foto{
+@media(max-width: 600px) {
+  .sobre-foto {
     height: 300px;
     width: 300px;
   }
-  .sobre-conteudo h1{
+
+  .sobre-conteudo h1 {
     font-size: 2.5rem;
   }
-  .sobre-conteudo p{
+
+  .sobre-conteudo p {
     font-size: 0.75rem;
   }
 }
 
 /* Adaptação dos componentes para o mobile  */
-@media(max-width: 450px){
-  .sobre-bg{
+@media(max-width: 450px) {
+  .sobre-bg {
     padding: 10vh 0;
   }
-  .sobre{
+
+  .sobre {
     gap: 75px;
   }
-  .sobre-foto{
+
+  .sobre-foto {
     height: 220px;
     width: 220px;
   }
-  .sobre-conteudo h1{
+
+  .sobre-conteudo h1 {
     font-size: 2rem;
   }
-  .sobre-conteudo p{
+
+  .sobre-conteudo p {
     font-size: 0.7rem;
   }
-  .social-media ul{
+
+  .social-media ul {
     gap: 30px;
   }
-  .social-media ul svg{
+
+  .social-media ul svg {
     height: 30px;
     width: 30px;
   }
+}
+
+
+
+
+
+/* PARTE DOS MEUS PROJETOS */
+
+.projeto-bg {
+  background-color: var(--cor-n9);
+  padding: 20vh 0;
+}
+
+.projeto {
+  width: 100%;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.projeto-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 100px;
+}
+
+.projeto-conteudo h1 {
+  font: 700 3rem/1 "Poppins", sans-serif;
+}
+
+.projeto-conteudo p {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 4fr 7fr 6fr;
+  width: 700px;
+  background-color: var(--cor-n10);
+  padding: 20px 35px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #bdbdbd;
+}
+
+.card-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  position: relative;
+}
+.card-image::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 3px;
+  left: 140px;
+  height: 160px;
+  background-color: var(--cor-n9);
+}
+
+.card-image img {
+  width: 120px;
+  height: 120px;
+}
+.card-desc {
+  display: block;
+  padding: 10px 20px;
+}
+.card-desc h2{
+  font: 700 1.5rem/1 "Poppins", sans-serif;
+}
+.card-desc p {
+  margin-top: 15px;
+  font: 400 0.8rem/1.5 "Poppins", sans-serif;
+}
+
+.card-habilidades{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.habilidades{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.habilidades p{
+  font: 500 0.75rem/1 "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: var(--cor-n0);
+  background-color: var(--cor-n8);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.card a{
+  padding: 2px 0px;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  font: 500 0.8rem/1 "Poppins", sans-serif;
+  gap: 5px;
+  color: var(--cor-p9);
+}
+.card a svg{
+  height: 12px;
+  width: 12px;
+  fill: var(--cor-p9);
+}
+
+.card a:hover{
+  opacity: 0.6;
 }
