@@ -39,6 +39,7 @@
   max-width: 600px;
 }
 
+
 /* Social Medias */
 .social-media ul {
   display: flex;
@@ -162,6 +163,13 @@
 
 
 
+
+
+
+
+
+
+
 /* PARTE DOS MEUS PROJETOS */
 
 .projeto-bg {
@@ -192,14 +200,20 @@
 
 .projeto-conteudo p {
   font: 400 1rem/1.5 "Poppins", sans-serif;
+  max-width: 600px;
 }
 
+.projeto-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .card {
   display: grid;
-  grid-template-columns: 4fr 7fr 6fr;
-  width: 700px;
+  grid-template-columns: 2.5fr 4fr 3fr;
+  width: 650px;
   background-color: var(--cor-n10);
-  padding: 20px 35px;
+  padding: 38px 30px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 2px #bdbdbd;
@@ -216,10 +230,9 @@
 .card-image::after {
   content: '';
   position: absolute;
-  top: -20px;
   width: 3px;
-  left: 140px;
-  height: 160px;
+  left: 145px;
+  height: 100%;
   background-color: var(--cor-n9);
 }
 
@@ -228,7 +241,6 @@
   height: 120px;
 }
 .card-desc {
-  display: block;
   padding: 10px 20px;
 }
 .card-desc h2{
@@ -278,3 +290,85 @@
 .card a:hover{
   opacity: 0.6;
 }
+
+
+/* Diminuir o tamanho para continuar responsivo */
+@media(max-width: 1200px){
+  .projeto-conteudo{
+    gap: 30px;
+    margin-right: 60px;
+  }
+  .projeto-conteudo h1 {
+    font-size: 2.2rem;
+  }
+  .projeto-conteudo p{
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 520px;
+    padding: 30px 24px;
+  }
+  .card-image {
+   height: 90px;
+   width: 90px;
+  }
+  .card-image::after {
+    left: 110px;
+    height: 120px;
+  }
+  .card-image img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-desc{
+    padding: 8px 16px;
+  }
+  .card-desc h2{
+    font-size: 1.25rem;
+  }
+  .card-desc p{
+    margin-top: 10px;
+    font-size: 0.6rem;
+  }
+
+  .habilidades{
+    gap: 10px;
+  }
+  .habilidades p{
+    font-size: 0.6rem;
+    padding: 4px 8px;
+  }
+
+  .card a{
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
+/* Mudando para uma coluna */
+@media(max-width: 960px){
+  .projeto-bg{
+    padding: 10vh 0;
+  }
+  .projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .projeto-conteudo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0px;
+  }
+
+}
+
+
+/* Mudando os cards para o Mobile */
