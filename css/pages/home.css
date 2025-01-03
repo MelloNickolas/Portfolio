@@ -198,7 +198,7 @@
   font: 700 3rem/1 "Poppins", sans-serif;
 }
 
-.projeto-conteudo p {
+.projeto-conteudo  p {
   font: 400 1rem/1.5 "Poppins", sans-serif;
   max-width: 600px;
 }
@@ -273,7 +273,6 @@
 .habilidades-links {
   display: flex;
   align-self: flex-end;
-  align-self: flex-end;
 }
 .habilidades-links a {
   display: flex;
@@ -324,6 +323,8 @@
   fill: var(--cor-n0); /* Cor do ícone no hover */
 }
 
+
+
 /* Diminuir o tamanho para continuar responsivo */
 @media(max-width: 1200px) {
   .projeto-conteudo {
@@ -339,10 +340,56 @@
     font-size: 0.9rem;
   }
 
+  /*Adaptando o card*/
+  .card{
+    width: 520px;
+  }
+  .card-start {
+    padding-left: 25px;
+    padding-block: 15px;
+  }
+  .card-start img{
+    height: 110px;
+    width: 110px;
+  }
+
+  .card-center {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  .card-center h2{
+    font-size: 1.2rem;
+  }
+  .card-center p{
+    font-size: 0.7rem;
+  }
+  .card-end {
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+  .habilidades {
+    gap: 10px;
+  }
+  .habilidades p {
+    font-size: 0.6rem;
+    padding: 5px 8px;
+  }
+  .habilidades-links a:first-child svg {
+    height: 15px;
+    width: 15px;
+    padding: 6px;
+  }
+  .habilidades-links a:nth-child(2) {
+    font-size: 0.65rem;
+    padding: 6px 10px;
+  }
+  .habilidades-links a:nth-child(2) > svg {
+    height: 12px;
+    width: 12px;
+  }
 }
-
-
-
 
 /* Mudando para uma coluna */
 @media(max-width: 960px) {
@@ -355,7 +402,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
   }
 
   .projeto-conteudo {

@@ -11,7 +11,7 @@
 
 
 .btn p {
-  font: 500 1.2rem/1 "Poppins", sans-serif;
+  font: 500 1.1rem/1 "Poppins", sans-serif !important; 
   color: var(--cor-p1);
 }
 
