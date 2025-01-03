@@ -6,6 +6,7 @@
   padding: 16px 26px;
   background-image: var(--cor-linear);
   border-radius: 10px;
+  transition: opacity 0.3s;
 }
 
 
