@@ -51,6 +51,7 @@
   height: 40px;
   width: 40px;
   fill: #AC3AFF;
+  transition: opacity 0.3s;
 }
 
 .social-media ul svg:hover {
@@ -416,4 +417,33 @@
 
 
 /* Mudando os cards para o Mobile */
-@media(max-width: 600px) {}
+@media(max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+    padding-inline: 10%;
+    padding-top: 40px;
+  }
+  .card-start{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .card-center {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .card-end {
+    padding: 0px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .habilidades-links {
+    align-self: auto;
+  }
+}
