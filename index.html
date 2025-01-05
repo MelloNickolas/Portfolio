@@ -5,13 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>By Nickolas - Portifólio Pessoal</title>
-  <meta name="Descrição"
-    content="Potifólio pessoal onde são registradas as habilidades e os projetos realizados por mim." />
+  <title>By Nickolas</title>
+  <meta name="description" content="Portifólio pessoal que expões meus projetos e minhas habilidades mostrando do que sou capaz.">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./css/style.css" as="style" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css" media="all"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +35,7 @@
   </header>
 
 
-  <main class="sobre-bg">
+  <main class="sobre-bg" aria-label="sobre mim">
     <div class="sobre container">
 
       <div class="sobre-conteudo">
@@ -44,7 +43,7 @@
         <p class="cor-n7">Meu nome é Nickolas Passos Homem de Mello, tenho 18 anos e sou um jovem na área de programação
           e empreendedorismo digital.</p>
         <!-- Estou puxanodo o css do botão dos componentes -->
-        <a href="" class="btn">
+        <a href="" class="btn" aria-label="Ver mais informações">
           <p>Ver Mais</p>
           <!-- Icon Arrow-->
           <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
@@ -52,14 +51,14 @@
           </svg>
         </a>
 
-        <div class="social-media" aria-label="Redes-Sociais">
+        <div class="social-media">
           <ul>
             <!--Instagram Icon-->
             <li>
-              <a href="">
+              <a href="" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                   id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
-                  xml:space="preserve" width="512" height="512">
+                  xml:space="preserve" width="512" height="512"  alt="Instagram">
                   <g>
                     <path
                       d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z" />
@@ -73,10 +72,10 @@
 
             <!--Github Icon-->
             <li>
-              <a href="">
+              <a href="" aria-label="Github">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                   id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
-                  xml:space="preserve" width="512" height="512">
+                  xml:space="preserve" width="50" height="50" alt="Github">
                   <g>
                     <path style="fill-rule:evenodd;clip-rule:evenodd;"
                       d="M12,0.296c-6.627,0-12,5.372-12,12c0,5.302,3.438,9.8,8.206,11.387   c0.6,0.111,0.82-0.26,0.82-0.577c0-0.286-0.011-1.231-0.016-2.234c-3.338,0.726-4.043-1.416-4.043-1.416   C4.421,18.069,3.635,17.7,3.635,17.7c-1.089-0.745,0.082-0.729,0.082-0.729c1.205,0.085,1.839,1.237,1.839,1.237   c1.07,1.834,2.807,1.304,3.492,0.997C9.156,18.429,9.467,17.9,9.81,17.6c-2.665-0.303-5.467-1.332-5.467-5.93   c0-1.31,0.469-2.381,1.237-3.221C5.455,8.146,5.044,6.926,5.696,5.273c0,0,1.008-0.322,3.301,1.23   C9.954,6.237,10.98,6.104,12,6.099c1.02,0.005,2.047,0.138,3.006,0.404c2.29-1.553,3.297-1.23,3.297-1.23   c0.653,1.653,0.242,2.873,0.118,3.176c0.769,0.84,1.235,1.911,1.235,3.221c0,4.609-2.807,5.624-5.479,5.921   c0.43,0.372,0.814,1.103,0.814,2.222c0,1.606-0.014,2.898-0.014,3.293c0,0.319,0.216,0.694,0.824,0.576   c4.766-1.589,8.2-6.085,8.2-11.385C24,5.669,18.627,0.296,12,0.296z" />
@@ -100,9 +99,9 @@
             </li>
             <!-- Linkedin Icon-->
             <li>
-              <a href="">
+              <a href="" aria-label="Linkedin">
                 <svg viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  xmlns:xlink="http://www.w3.org/1999/xlink" alt="Linkedin">
                   <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Social-Icons---Rounded-Black" transform="translate(-376.000000, -267.000000)">
                       <g id="Linkedin" transform="translate(376.000000, 267.000000)">
@@ -121,10 +120,10 @@
 
             <!--Whatasapp Icon-->
             <li>
-              <a href="">
+              <a href="" aria-label="Whatsapp">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                   id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
-                  xml:space="preserve" width="512" height="512">
+                  xml:space="preserve" width="512" height="512" alt="Whatsapp">
                   <g id="WA_Logo">
                     <g>
                       <path style="fill-rule:evenodd;clip-rule:evenodd;"
@@ -136,8 +135,8 @@
             </li>
             <!--Email Icon-->
             <li>
-              <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512">
+              <a href="" aria-label="E-mail">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="512" height="512" alt="E-mail">
                   <path
                     d="M19,1H5A5.006,5.006,0,0,0,0,6V18a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V6A5.006,5.006,0,0,0,19,1ZM5,3H19a3,3,0,0,1,2.78,1.887l-7.658,7.659a3.007,3.007,0,0,1-4.244,0L2.22,4.887A3,3,0,0,1,5,3ZM19,21H5a3,3,0,0,1-3-3V7.5L8.464,13.96a5.007,5.007,0,0,0,7.072,0L22,7.5V18A3,3,0,0,1,19,21Z" />
                 </svg>
@@ -149,7 +148,7 @@
       </div>
 
       <picture class="sobre-foto">
-        <img src="./imgs/minha-foto.jpg" height="1280" width="720" alt="Uma foto minha!">
+        <img src="./imgs/minha-foto.jpg" height="500" width="500" alt="Uma foto minha!">
       </picture>
     </div>
   </main>
@@ -166,7 +165,7 @@
         <h1 class="cor-n0">Meus Projetos<span class="cor-p9">.</span></h1>
         <p class="cor-n3">Últimas aplicações realizadas por mim com o intuito de desenvolver e aprimorar minhas
           habilidades.</p>
-        <a href="" class="btn">
+        <a href="" class="btn" aria-label="Ver todos os projetos">
           <p>Ver Todos</p>
           <!-- Icon Arrow-->
           <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
@@ -178,7 +177,7 @@
       <div class="projeto-cards">
         <div class="card">
           <div class="card-start">
-            <img src="./imgs/projetos/bikcraft-aside.png" alt="Projeto Bikcraft" height="500px" width="500px">
+            <img src="./imgs/projetos/bikcraft-aside.png" alt="Projeto Bikcraft" height="140px" width="140px">
           </div>
           <div class="card-center">
             <h2 class="cor-n0">Bikcraft</h2>
@@ -193,10 +192,10 @@
             </div>
 
             <div class="habilidades-links">
-              <a href="">
+              <a href="" aria-label="repositório">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                   id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
-                  xml:space="preserve" width="512" height="512" class="svg">
+                  xml:space="preserve" width="512" height="512" class="svg" alt="Ver repositório">
                   <g>
                     <path style="fill-rule:evenodd;clip-rule:evenodd;"
                       d="M12,0.296c-6.627,0-12,5.372-12,12c0,5.302,3.438,9.8,8.206,11.387   c0.6,0.111,0.82-0.26,0.82-0.577c0-0.286-0.011-1.231-0.016-2.234c-3.338,0.726-4.043-1.416-4.043-1.416   C4.421,18.069,3.635,17.7,3.635,17.7c-1.089-0.745,0.082-0.729,0.082-0.729c1.205,0.085,1.839,1.237,1.839,1.237   c1.07,1.834,2.807,1.304,3.492,0.997C9.156,18.429,9.467,17.9,9.81,17.6c-2.665-0.303-5.467-1.332-5.467-5.93   c0-1.31,0.469-2.381,1.237-3.221C5.455,8.146,5.044,6.926,5.696,5.273c0,0,1.008-0.322,3.301,1.23   C9.954,6.237,10.98,6.104,12,6.099c1.02,0.005,2.047,0.138,3.006,0.404c2.29-1.553,3.297-1.23,3.297-1.23   c0.653,1.653,0.242,2.873,0.118,3.176c0.769,0.84,1.235,1.911,1.235,3.221c0,4.609-2.807,5.624-5.479,5.921   c0.43,0.372,0.814,1.103,0.814,2.222c0,1.606-0.014,2.898-0.014,3.293c0,0.319,0.216,0.694,0.824,0.576   c4.766-1.589,8.2-6.085,8.2-11.385C24,5.669,18.627,0.296,12,0.296z" />
@@ -206,7 +205,7 @@
                       d="M5.031,18.068c-0.057,0.053-0.169,0.028-0.245-0.055c-0.079-0.084-0.093-0.196-0.035-0.249   c0.059-0.053,0.167-0.028,0.246,0.056C5.076,17.903,5.091,18.014,5.031,18.068L5.031,18.068z" />
                     <path
                       d="M5.504,18.759c-0.074,0.051-0.194,0.003-0.268-0.103c-0.074-0.107-0.074-0.235,0.002-0.286   c0.074-0.051,0.193-0.005,0.268,0.101C5.579,18.579,5.579,18.707,5.504,18.759L5.504,18.759z" />
-                    <path
+                    <pathw
                       d="M6.152,19.427c-0.066,0.073-0.206,0.053-0.308-0.046c-0.105-0.097-0.134-0.234-0.068-0.307   c0.067-0.073,0.208-0.052,0.311,0.046C6.191,19.217,6.222,19.355,6.152,19.427L6.152,19.427z" />
                     <path
                       d="M7.047,19.814c-0.029,0.094-0.164,0.137-0.3,0.097C6.611,19.87,6.522,19.76,6.55,19.665   c0.028-0.095,0.164-0.139,0.301-0.096C6.986,19.609,7.075,19.719,7.047,19.814L7.047,19.814z" />
@@ -233,6 +232,8 @@
       </div>
     </div>
   </article>
+
+
 
 
 
