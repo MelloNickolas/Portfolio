@@ -199,7 +199,7 @@
   font: 700 3rem/1 "Poppins", sans-serif;
 }
 
-.projeto-conteudo  p {
+.projeto-conteudo p {
   font: 400 1rem/1.5 "Poppins", sans-serif;
   max-width: 600px;
 }
@@ -271,10 +271,12 @@
   padding: 8px 12px;
   border-radius: 20%;
 }
+
 .habilidades-links {
   display: flex;
   align-self: flex-end;
 }
+
 .habilidades-links a {
   display: flex;
   justify-content: center;
@@ -294,8 +296,9 @@
   fill: var(--cor-n2);
   transition: background-color 0.3s, fill 0.1s;
 }
+
 .habilidades-links a:first-child svg:hover {
-  background-color: var(--cor-n5); 
+  background-color: var(--cor-n5);
   fill: var(--cor-n0);
 }
 
@@ -309,6 +312,7 @@
   color: var(--cor-n2);
   transition: background-color 0.3s, color 0.1s;
 }
+
 /*Setinha da web*/
 .habilidades-links a:nth-child(2)>svg {
   height: 15px;
@@ -316,12 +320,17 @@
   fill: var(--cor-n2);
   transition: fill 0.1s;
 }
+
 .habilidades-links a:nth-child(2):hover {
-  background-color: var(--cor-n5); /* Cor de fundo no hover */
-  color: var(--cor-n0); /* Cor do texto no hover */
+  background-color: var(--cor-n5);
+  /* Cor de fundo no hover */
+  color: var(--cor-n0);
+  /* Cor do texto no hover */
 }
-.habilidades-links a:nth-child(2):hover > svg {
-  fill: var(--cor-n0); /* Cor do ícone no hover */
+
+.habilidades-links a:nth-child(2):hover>svg {
+  fill: var(--cor-n0);
+  /* Cor do ícone no hover */
 }
 
 
@@ -342,14 +351,16 @@
   }
 
   /*Adaptando o card*/
-  .card{
+  .card {
     width: 520px;
   }
+
   .card-start {
     padding-left: 25px;
     padding-block: 15px;
   }
-  .card-start img{
+
+  .card-start img {
     height: 110px;
     width: 110px;
   }
@@ -360,33 +371,41 @@
     padding-left: 5px;
     padding-right: 15px;
   }
-  .card-center h2{
+
+  .card-center h2 {
     font-size: 1.2rem;
   }
-  .card-center p{
+
+  .card-center p {
     font-size: 0.7rem;
   }
+
   .card-end {
     padding-top: 30px;
     padding-right: 15px;
   }
+
   .habilidades {
     gap: 10px;
   }
+
   .habilidades p {
     font-size: 0.6rem;
     padding: 5px 8px;
   }
+
   .habilidades-links a:first-child svg {
     height: 15px;
     width: 15px;
     padding: 6px;
   }
+
   .habilidades-links a:nth-child(2) {
     font-size: 0.65rem;
     padding: 6px 10px;
   }
-  .habilidades-links a:nth-child(2) > svg {
+
+  .habilidades-links a:nth-child(2)>svg {
     height: 12px;
     width: 12px;
   }
@@ -424,17 +443,20 @@
     width: fit-content;
     box-sizing: border-box;
     padding-inline: 10%;
-    padding-top: 40px;
+    padding-top: 25px;
   }
-  .card-start{
+
+  .card-start {
     padding: 0;
     display: flex;
     justify-content: center;
   }
+
   .card-center {
     padding: 0px;
     margin-top: 30px;
   }
+
   .card-end {
     padding: 0px;
     justify-content: center;
@@ -443,11 +465,25 @@
     gap: 20px;
     padding-bottom: 20px;
   }
+
   .habilidades-links {
     align-self: auto;
   }
 }
-
+@media(max-width:450px){
+  .projeto-conteudo {
+    gap: 20px;
+  }
+  .projeto-conteudo h1{
+    font-size: 1.75rem;
+  }
+  .projeto-conteudo > p{
+    font-size: 0.6rem;
+  } 
+  .projeto{
+    gap: 50px;
+  }
+}
 
 
 
@@ -457,7 +493,7 @@
 
 
 /* Parte das minhas habilidades */
-.skills-bg{
+.skills-bg {
   background-color: var(--cor-n10);
   padding: 20vh 0;
 }
@@ -466,7 +502,6 @@
   padding: 0 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
   gap: 40px;
 }
 
@@ -477,6 +512,7 @@
   align-self: flex-start;
   gap: 25px 30px;
 }
+
 .skills-start picture {
   background-color: var(--cor-n7);
   padding: 21px;
@@ -484,15 +520,18 @@
   border: solid 4px var(--cor-n7);
   transition: background-color ease-in 0.2s, border 0.7s;
 }
+
 .skills-start picture img {
   filter: grayscale(100%);
   transition: filter 0.3s;
 }
-.skills-start picture:hover{
+
+.skills-start picture:hover {
   background-color: var(--cor-n9);
   cursor: pointer;
 }
-.skills-start picture:hover > img {
+
+.skills-start picture:hover>img {
   filter: grayscale(0%);
 }
 
@@ -500,24 +539,31 @@
 .skills-start picture:nth-child(1):hover {
   border: solid 4px green;
 }
+
 .skills-start picture:nth-child(2):hover {
   border: solid 4px green;
 }
+
 .skills-start picture:nth-child(3):hover {
   border: solid 4px green;
 }
+
 .skills-start picture:nth-child(4):hover {
-  border: solid 4px  rgb(225, 192, 0);
+  border: solid 4px rgb(225, 192, 0);
 }
+
 .skills-start picture:nth-child(5):hover {
-  border: solid 4px  rgb(225, 192, 0);
+  border: solid 4px rgb(225, 192, 0);
 }
+
 .skills-start picture:nth-child(6):hover {
-  border: solid 4px  rgb(225, 192, 0);
+  border: solid 4px rgb(225, 192, 0);
 }
+
 .skills-start picture:nth-child(7):hover {
   border: solid 4px green;
 }
+
 .skills-start picture:nth-child(8):hover {
   border: solid 4px green;
 }
@@ -525,21 +571,25 @@
 
 
 .skills-end {
-  display: block;
+  display: inline-block;
 }
-.skills-end h1{
+
+.skills-end h1 {
   font: 700 3rem/1 "Poppins", sans-serif;
 }
-.skills-end > p{
+
+.skills-end>p {
   margin-block: 40px;
   font: 400 1rem/1.5 "Poppins", sans-serif;
 }
-.skills-end-levels{
+
+.skills-end-levels {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 20px;
 }
-.skills-end-levels div{
+
+.skills-end-levels div {
   max-width: 220px;
   display: flex;
   flex-direction: column;
@@ -548,13 +598,15 @@
   background-color: var(--cor-n9);
   border-radius: 20px;
 }
-.skills-end-levels div h2{
+
+.skills-end-levels div h2 {
   display: block;
   font: 700 1.25rem/1 "Poppins", sans-serif;
   text-transform: uppercase;
   margin-left: 30px;
   position: relative;
 }
+
 .skills-end-levels div p {
   font: 400 0.75rem/1.5 "Poppins", sans-serif;
   margin-top: 12px;
@@ -563,10 +615,11 @@
 
 
 /*Adicionando as cores separadamente nos elementos*/
-.skills-end-levels div:nth-child(1) h2{
+.skills-end-levels div:nth-child(1) h2 {
   color: red;
 }
-.skills-end-levels div:nth-child(1) h2::before{
+
+.skills-end-levels div:nth-child(1) h2::before {
   content: "";
   display: flex;
   align-self: center;
@@ -578,10 +631,12 @@
   background-color: red;
   border-radius: 10px;
 }
-.skills-end-levels div:nth-child(2) h2{
+
+.skills-end-levels div:nth-child(2) h2 {
   color: rgb(225, 192, 0);
 }
-.skills-end-levels div:nth-child(2) h2::before{
+
+.skills-end-levels div:nth-child(2) h2::before {
   content: "";
   display: flex;
   align-self: center;
@@ -593,10 +648,12 @@
   background-color: rgb(225, 192, 0);
   border-radius: 10px;
 }
-.skills-end-levels div:nth-child(3) h2{
+
+.skills-end-levels div:nth-child(3) h2 {
   color: green;
 }
-.skills-end-levels div:nth-child(3) h2::before{
+
+.skills-end-levels div:nth-child(3) h2::before {
   content: "";
   display: flex;
   align-self: center;
@@ -611,53 +668,133 @@
 
 
 /* Diminuindo os tamanhos */
-@media(max-width: 1200px){
+@media(max-width: 1200px) {
   .skills-start picture img {
     height: 70px;
     width: 70px;
   }
 
-  .skills-end h1{
+  .skills-end h1 {
     font-size: 2.2rem;
   }
-  .skills-end > p{
+
+  .skills-end>p {
     margin-block: 30px;
     font-size: 0.9rem;
   }
+
   .skills-end-levels div {
     padding: 20px;
     border-radius: 150x;
   }
+
   .skills-end div h2 {
     margin-left: 20px;
     font-size: 1rem;
   }
+
   .skills-end-levels div:nth-child(1) h2::before,
   .skills-end-levels div:nth-child(2) h2::before,
-  .skills-end-levels div:nth-child(3) h2::before{
+  .skills-end-levels div:nth-child(3) h2::before {
     height: 2px;
     width: 12px;
     left: -20px;
   }
-  .skills-end div p{
+
+  .skills-end div p {
     margin-top: 10px;
     font-size: 0.65rem;
   }
 }
 
 /*Quebrando o conteúdo para uma linha*/
-@media(max-width: 960px){
-  .skills{
+@media(max-width: 960px) {
+  .skills {
     grid-template-columns: 1fr;
     place-items: center;
   }
-  .skills-end{
+
+  .skills-bg {
+    padding: 10vh 0;
+  }
+
+  .skills-end {
     order: -1;
     max-width: 600px;
   }
+
   .skills-start {
     max-width: 600px;
     justify-content: center;
     align-items: center;
+  }
+
+  .skills-start picture {
+    padding: 16px;
+  }
+
+  .skills-start picture img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+/* Centralizando e adaptando para o mobile */
+@media(max-width: 600px) {
+  .skills-end-levels {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .skills-end-levels div {
+    max-width: 200px;
+  }
+
+  .skills-start {
+    margin-top: 40px;
+  }
+
+  .skills-start {
+    gap: 20px;
+  }
+
+  .skills-start picture {
+    padding: 12px;
+  }
+
+  .skills-start picture img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Arrumando os tamanho para o mobile */
+@media(max-width: 450px){
+  .skills-end h1{
+    font-size: 1.75rem;
+  }
+  .skills-end > p {
+    font-size: 0.6rem;
+    margin-block: 20px;
+  }
+
+  .skills-end-levels div{
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .skills-end-levels div p{
+    margin-top: 5px;
+  }
+  .skills-start {
+    margin-top: 5px;
+    gap: 10px;
+  }
+  .skills-start picture {
+    border-radius: 10px;
+  }
+  .skills-start picture img {
+    height: 30px;
+    width: 30px;
   }
 }
