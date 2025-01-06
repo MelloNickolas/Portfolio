@@ -447,3 +447,217 @@
     align-self: auto;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Parte das minhas habilidades */
+.skills-bg{
+  background-color: var(--cor-n10);
+  padding: 20vh 0;
+}
+
+.skills {
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.skills-start {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-self: flex-start;
+  gap: 25px 30px;
+}
+.skills-start picture {
+  background-color: var(--cor-n7);
+  padding: 21px;
+  border-radius: 20px;
+  border: solid 4px var(--cor-n7);
+  transition: background-color ease-in 0.2s, border 0.7s;
+}
+.skills-start picture img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.skills-start picture:hover{
+  background-color: var(--cor-n9);
+  cursor: pointer;
+}
+.skills-start picture:hover > img {
+  filter: grayscale(0%);
+}
+
+/* Colocando as bordas coloridas no HOVER */
+.skills-start picture:nth-child(1):hover {
+  border: solid 4px green;
+}
+.skills-start picture:nth-child(2):hover {
+  border: solid 4px green;
+}
+.skills-start picture:nth-child(3):hover {
+  border: solid 4px green;
+}
+.skills-start picture:nth-child(4):hover {
+  border: solid 4px  rgb(225, 192, 0);
+}
+.skills-start picture:nth-child(5):hover {
+  border: solid 4px  rgb(225, 192, 0);
+}
+.skills-start picture:nth-child(6):hover {
+  border: solid 4px  rgb(225, 192, 0);
+}
+.skills-start picture:nth-child(7):hover {
+  border: solid 4px green;
+}
+.skills-start picture:nth-child(8):hover {
+  border: solid 4px green;
+}
+
+
+
+.skills-end {
+  display: block;
+}
+.skills-end h1{
+  font: 700 3rem/1 "Poppins", sans-serif;
+}
+.skills-end > p{
+  margin-block: 40px;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.skills-end-levels{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+.skills-end-levels div{
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 30px;
+  background-color: var(--cor-n9);
+  border-radius: 20px;
+}
+.skills-end-levels div h2{
+  display: block;
+  font: 700 1.25rem/1 "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-left: 30px;
+  position: relative;
+}
+.skills-end-levels div p {
+  font: 400 0.75rem/1.5 "Poppins", sans-serif;
+  margin-top: 12px;
+}
+
+
+
+/*Adicionando as cores separadamente nos elementos*/
+.skills-end-levels div:nth-child(1) h2{
+  color: red;
+}
+.skills-end-levels div:nth-child(1) h2::before{
+  content: "";
+  display: flex;
+  align-self: center;
+  height: 4px;
+  position: absolute;
+  width: 20px;
+  top: 40%;
+  left: -30px;
+  background-color: red;
+  border-radius: 10px;
+}
+.skills-end-levels div:nth-child(2) h2{
+  color: rgb(225, 192, 0);
+}
+.skills-end-levels div:nth-child(2) h2::before{
+  content: "";
+  display: flex;
+  align-self: center;
+  height: 4px;
+  position: absolute;
+  width: 20px;
+  top: 40%;
+  left: -30px;
+  background-color: rgb(225, 192, 0);
+  border-radius: 10px;
+}
+.skills-end-levels div:nth-child(3) h2{
+  color: green;
+}
+.skills-end-levels div:nth-child(3) h2::before{
+  content: "";
+  display: flex;
+  align-self: center;
+  height: 4px;
+  position: absolute;
+  width: 20px;
+  top: 40%;
+  left: -30px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+
+/* Diminuindo os tamanhos */
+@media(max-width: 1200px){
+  .skills-start picture img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .skills-end h1{
+    font-size: 2.2rem;
+  }
+  .skills-end > p{
+    margin-block: 30px;
+    font-size: 0.9rem;
+  }
+  .skills-end-levels div {
+    padding: 20px;
+    border-radius: 150x;
+  }
+  .skills-end div h2 {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  .skills-end-levels div:nth-child(1) h2::before,
+  .skills-end-levels div:nth-child(2) h2::before,
+  .skills-end-levels div:nth-child(3) h2::before{
+    height: 2px;
+    width: 12px;
+    left: -20px;
+  }
+  .skills-end div p{
+    margin-top: 10px;
+    font-size: 0.65rem;
+  }
+}
+
+/*Quebrando o conteúdo para uma linha*/
+@media(max-width: 960px){
+  .skills{
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .skills-end{
+    order: -1;
+    max-width: 600px;
+  }
+  .skills-start {
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+}
