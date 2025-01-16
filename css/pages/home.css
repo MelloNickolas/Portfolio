@@ -69,7 +69,7 @@
 
 .sobre-foto img {
   display: block;
-  border-radius: 10%;
+  border-radius: 50%;
   object-fit: cover;
   border: solid 5px #AC3AFF;
   height: 400px;
@@ -784,4 +784,54 @@
     height: 30px;
     width: 30px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Formacoes e Cerificacoes CSS*/
+
+.formacoes-bg {
+  background-color: var(--cor-n10);
+  padding: 20vh 0;
+  position: relative;
+}
+.formacoes-bg::before{
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 4px;
+  border-radius: 40%;
+  background-color: var(--cor-n9);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formacoes {
+  display: flex;
+  justify-content: center;
+}
+.formacoes > h1 {
+  font: 700 3rem / 1 "Poppins", sans-serif;
+  position: relative;
+}
+.formacoes > h1::before{
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 7px;
+  border-radius: 30px;
+  background-color: #AC3AFF;
+  top: -10px;
 }
