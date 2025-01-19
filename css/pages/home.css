@@ -7,7 +7,7 @@
 .sobre {
   padding: 0 60px;
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   gap: 0px 140px;
 }
 
@@ -457,17 +457,21 @@
     align-self: auto;
   }
 }
-@media(max-width:450px){
+
+@media(max-width:450px) {
   .projeto-conteudo {
     gap: 20px;
   }
-  .projeto-conteudo h1{
+
+  .projeto-conteudo h1 {
     font-size: 1.75rem;
   }
-  .projeto-conteudo > p{
+
+  .projeto-conteudo>p {
     font-size: 0.6rem;
-  } 
-  .projeto{
+  }
+
+  .projeto {
     gap: 50px;
   }
 }
@@ -757,29 +761,34 @@
 }
 
 /* Arrumando os tamanho para o mobile */
-@media(max-width: 450px){
-  .skills-end h1{
+@media(max-width: 450px) {
+  .skills-end h1 {
     font-size: 1.75rem;
   }
-  .skills-end > p {
+
+  .skills-end>p {
     font-size: 0.6rem;
     margin-block: 20px;
   }
 
-  .skills-end-levels div{
+  .skills-end-levels div {
     padding: 15px;
     border-radius: 10px;
   }
-  .skills-end-levels div p{
+
+  .skills-end-levels div p {
     margin-top: 5px;
   }
+
   .skills-start {
     margin-top: 5px;
     gap: 10px;
   }
+
   .skills-start picture {
     border-radius: 10px;
   }
+
   .skills-start picture img {
     height: 30px;
     width: 30px;
@@ -806,7 +815,8 @@
   padding: 20vh 0;
   position: relative;
 }
-.formacoes-bg::before{
+
+.formacoes-bg::before {
   content: "";
   position: absolute;
   width: 80%;
@@ -824,12 +834,13 @@
   flex-direction: column;
   align-items: center;
 }
-.formacoes > h1 {
+
+.formacoes>h1 {
   font: 700 3rem / 1 "Poppins", sans-serif;
   position: relative;
 }
 
-.formacoes > h1::before{
+.formacoes>h1::before {
   content: "";
   position: absolute;
   width: 25%;
@@ -839,7 +850,7 @@
   top: -10px;
 }
 
-.formacoes-card-box{
+.formacoes-card-box {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
@@ -847,7 +858,7 @@
   gap: 40px;
 }
 
-.formacoes-card{
+.formacoes-card {
   display: grid;
   grid-template-columns: 3fr 7fr 2fr;
   max-width: 600px;
@@ -856,11 +867,12 @@
   opacity: 0.5;
   transition: opacity .3s;
 }
-.formacoes-card:hover{
+
+.formacoes-card:hover {
   opacity: 1;
 }
 
-.formacoes-card picture{
+.formacoes-card picture {
   display: flex;
   padding: 5px;
   justify-content: center;
@@ -869,7 +881,7 @@
   border-radius: 20px;
 }
 
-.formacoes-card-content{
+.formacoes-card-content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -877,12 +889,12 @@
   margin-left: 20px;
 }
 
-.formacoes-card-content > h1 {
+.formacoes-card-content>h1 {
   font: 600 1.15rem/1.3 "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
-.formacoes-card-content >  p {
+.formacoes-card-content>p {
   font: 400 0.8rem/1 "Poppins", sans-serif;
 }
 
@@ -891,12 +903,14 @@
   justify-content: end;
   align-items: center;
 }
-.formacoes-card-arrow svg{
+
+.formacoes-card-arrow svg {
   fill: var(--cor-n8);
   transition: .3s;
   cursor: pointer;
 }
-.formacoes-card-arrow svg:hover{
+
+.formacoes-card-arrow svg:hover {
   fill: var(--cor-p9);
 }
 
@@ -904,7 +918,7 @@
 
 
 @media(max-width: 1200px) {
-  .formacoes > h1 {
+  .formacoes>h1 {
     font-size: 2.2rem;
   }
 }
@@ -935,56 +949,153 @@
   padding: 20vh 0;
   background-color: var(--cor-n0);
 }
+
 .nebula {
   display: grid;
   grid-template-columns: 8fr 4fr;
   padding: 0 60px;
 }
 
-.nebula-start{
+.nebula-start {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   margin-right: 80px;
 }
-.nebula-start > h4 {
+
+.nebula-start>h4 {
   font: 400 1rem/1 "Poppins", sans-serif;
 }
-.nebula-start > h1 {
+
+.nebula-start>h1 {
   font: 700 5rem/1 "Poppins", sans-serif;
   margin-top: 5px;
 }
-.nebula-start > p {
+
+.nebula-start>p {
   font: 300 1.1rem/1.5 "Poppins", sans-serif;
   max-width: 600px;
   margin: 40px 0px;
 }
 
 .nebula-start-services {
-  margin-right: 80px; /* Espaçamento para direita para encaixar no design */
+  margin-right: 80px;
+  /* Espaçamento para direita para encaixar no design */
   margin-top: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-direction: column;
   position: relative;
 }
 
-.nebula-start-services > h1 {
+.nebula-start-services>h1 {
   padding: 12px 40px;
   background-image: var(--cor-linear);
   border-radius: 20px;
   font: 600 1.5rem "Poppins", sans-serif;
-  z-index: 99;
+  position: relative;
+  z-index: 2;
 }
-.nebula-start-services > h1::before {
-  position: absolute;
-  content: "";
+
+.nebula-start-services>div {
   height: 5px;
-  border-radius: 10px;
   width: 100%;
-  left: 0;
-  background-color: #bdbdbd;
-  z-index: 3;
+  border-radius: 10px;
+  background-image: var(--cor-linear);
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+}
+
+.nebula-services-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.nebula-services-card {
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: solid 2px transparent;
+}
+
+.nebula-services-card svg {
+  fill: #AC3AFF;
+  height: 45px;
+  width: 45px;
+}
+
+.nebula-services-card h1 {
+  font: 600 1.5rem/1 "Poppins", sans-serif;
+  margin-top: 15px;
+}
+
+.nebula-services-card p {
+  font: 300 0.8rem/1.5 "Poppins", sans-serif;
+  max-width: 270px;
+}
+
+/* As bordas dps serviços */
+.nebula-services-card:nth-child(1),
+.nebula-services-card:nth-child(2) {
+  padding-bottom: 30px;
+}
+
+.nebula-services-card:nth-child(odd) {
+  border-right: var(--cor-n1) solid;
+}
+
+.nebula-services-card:nth-child(3),
+.nebula-services-card:nth-child(4) {
+  border-top: var(--cor-n1) solid;
+  padding-top: 30px;
+}
+
+.nebula-end {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.nebula-end-card {
+  display: block;
+  padding-block: 30px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor-n1);
+  gap: 25px;
+  position: relative;
+}
+
+.nebula-end-card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 0;
+  border-radius: 20px;
+  height: 8px;
+  background-image: var(--cor-linear);
+}
+
+.nebula-end-card img {
+  border-radius: 20px;
+  
+}
+.nebula-end-card:first-child img{
+  -webkit-box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
+  box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
+}
+.nebula-end-card h1 {
+  font: 700 2.5rem "Poppins", sans-serif;
 }
