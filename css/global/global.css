@@ -2,6 +2,9 @@ body {
   margin: 0px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
