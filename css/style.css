@@ -8,6 +8,7 @@
 @import "/css/componentes/button.css";
 @import "/css/componentes/footer.css"; 
 @import "/css/componentes/backToTop.css";
+@import "/css/componentes/modalSobre.css";
 
 /* Pages */
 @import "/css/pages/home.css";

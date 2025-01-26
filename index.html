@@ -24,7 +24,7 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <h1><a href="">By Nickolas</a></h1>
+      <h1>By Nickolas</h1>
       <nav aria-label="menu-principal">
         <ul class="header-menu">
           <li><a href="#projetos">Projetos</a></li>
@@ -56,13 +56,13 @@
         <p class="cor-n7">Meu nome é Nickolas Passos Homem de Mello, tenho 18 anos e sou um jovem na área de programação
           e empreendedorismo digital.</p>
         <!-- Estou puxanodo o css do botão dos componentes -->
-        <a href="" class="btn" aria-label="Ver mais informações">
+        <button href="" class="btn" aria-label="Ver mais informações" id="openModalBtn" style="cursor: pointer;">
           <p>Ver Mais</p>
           <!-- Icon Arrow-->
           <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
             <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
           </svg>
-        </a>
+        </button>
 
         <div class="social-media">
           <ul>
@@ -548,9 +548,20 @@
     </div>
   </footer>
 
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <h2>Modal Simples</h2>
+      <p>Esse é um modal criado com HTML, CSS e JS!</p>
+      <button id="closeModalBtn" class="modal-close">Fechar</button>
+    </div>
+  </div>
+
   <button id="backToTop" title="Voltar ao topo">
     <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" ><path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z"/></svg>
   </button>
+
+  <script src="./js/modalSobre.js"></script>
   <script src="/js/backToTop.js"></script>
 </body>
 
