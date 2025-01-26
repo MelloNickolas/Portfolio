@@ -6,6 +6,6 @@
 /* Componentes */
 @import "/css/componentes/header.css";
 @import "/css/componentes/button.css";
-
+@import "/css/componentes/footer.css";  
 /* Pages */
 @import "/css/pages/home.css";
