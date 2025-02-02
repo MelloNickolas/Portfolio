@@ -1020,7 +1020,7 @@
 }
 
 .nebula-services-card {
-  padding-inline: 40px;
+  padding-inline: 30px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1098,4 +1098,65 @@
 }
 .nebula-end-card h1 {
   font: 700 2.5rem "Poppins", sans-serif;
+}
+
+
+
+/* Diminuindo os tamanhos para responsividade */
+@media(max-width: 1200px) {
+  .nebula-start > h1{
+    font-size: 4rem;
+  }
+  .nebula-start > h4{
+    font-size: 0.8rem;
+  }
+  .nebula-start > p {
+    font-size: 0.9rem;
+  }
+  .nebula-services-card{
+    padding-inline: 20px;
+  }
+  .nebula-services-card p{
+    font-size: 0.6rem;
+    max-width: 190px;
+  }
+  .nebula-services-card h1{
+    font-size: 1rem;
+  }
+  .nebula-services-card svg{
+    height: 35px;
+    width: 35px;
+  }
+
+  .nebula-services-card:nth-child(1),
+  .nebula-services-card:nth-child(2){
+    padding-bottom: 20px;
+  }
+
+  .nebula-end-card h1{
+    font-size: 2rem;
+  }
+  .nebula-end-card:first-child img{
+    height: 200px;
+    width: 200px;
+  }
+  .nebula-end-card:nth-child(2) img{
+    width: 250px;
+  }
+}
+
+/* Quebrar tudo em uma coluna só*/
+@media(max-width: 960px) {
+  .nebula{
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .nebula-start {
+    max-width: 600px;
+    margin: 0px;
+  }
+  .nebula-start-services>h1{
+    padding: 10px 35px;
+    font-size: 1.2rem;
+  }
 }
