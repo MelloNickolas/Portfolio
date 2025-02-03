@@ -1,6 +1,6 @@
 /* Global */
 @import "./global/global.css";
-@import "./componentes/";
+@import "./global/container.css";
 @import "./global/cores.css";
 
 /* Componentes */
