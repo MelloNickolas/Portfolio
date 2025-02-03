@@ -1,14 +1,14 @@
 /* Global */
-@import "/css/global/global.css";
-@import "/css/global/container.css";
-@import "/css/global/cores.css";
+@import "./global/global.css";
+@import "./componentes/";
+@import "./global/cores.css";
 
 /* Componentes */
-@import "/css/componentes/header.css";
-@import "/css/componentes/button.css";
-@import "/css/componentes/footer.css"; 
-@import "/css/componentes/backToTop.css";
-@import "/css/componentes/modalSobre.css";
+@import "./componentes/header.css";
+@import "./componentes/button.css";
+@import "./componentes/footer.css"; 
+@import "./componentes/backToTop.css";
+@import "./componentes/modalSobre.css";
 
 /* Pages */
-@import "/css/pages/home.css";
+@import "./pages/home.css";
