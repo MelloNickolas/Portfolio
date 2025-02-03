@@ -1,7 +1,6 @@
 .sobre-bg {
   background-color: var(--cor-n0);
   padding: 20vh 0;
-  border-top: solid 2px var(--cor-n1);
 }
 
 .sobre {
@@ -78,6 +77,15 @@
 
 /* Diminuir tamanho dos elementos */
 @media(max-width: 1200px) {
+  .sobre {
+    gap: 0 80px;
+  }
+
+  .sobre-foto img {
+    height: 320px;
+    width: 320px;
+  }
+
   .sobre-conteudo {
     gap: 40px;
   }
@@ -95,7 +103,7 @@
 /* Colocar todos os elementos em apenas uma coluna*/
 @media(max-width: 960px) {
   .sobre-bg {
-    padding: 15vh 0vh;
+    padding: 10vh 0vh;
   }
 
   .sobre {
@@ -109,6 +117,10 @@
 
 /* Diminui os conteúdos para nao estourar o container*/
 @media(max-width: 600px) {
+  .sobre-foto img {
+    height: 300px;
+    width: 300px;
+  }
 
   .sobre-conteudo h1 {
     font-size: 2.5rem;
@@ -121,6 +133,11 @@
 
 /* Adaptação dos componentes para o mobile  */
 @media(max-width: 450px) {
+  .sobre-foto img {
+    height: 250px;
+    width: 250px;
+  }
+
   .sobre-bg {
     padding: 10vh 0;
   }
@@ -138,12 +155,13 @@
   }
 
   .social-media ul {
+    justify-content: center;
     gap: 30px;
   }
 
   .social-media ul svg {
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
   }
 }
 
@@ -427,7 +445,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    max-width: 250px;
     box-sizing: border-box;
     padding-inline: 10%;
     padding-top: 25px;
@@ -456,6 +474,25 @@
   .habilidades-links {
     align-self: auto;
   }
+
+  .card-end {
+    align-items: center;
+  }
+
+  .habilidades {
+    place-self: start;
+  }
+
+  .habilidades-links a:first-child svg {
+    background-image: var(--cor-linear);
+    padding: 8px;
+    fill: var(--cor-n10);
+  }
+
+  .card-start img {
+    height: 90px;
+    width: 90px;
+  }
 }
 
 @media(max-width:450px) {
@@ -473,6 +510,10 @@
 
   .projeto {
     gap: 50px;
+  }
+
+  .card-center p {
+    font-size: 0.6rem;
   }
 }
 
@@ -519,7 +560,6 @@
 
 .skills-start picture:hover {
   background-color: var(--cor-n9);
-  cursor: pointer;
 }
 
 .skills-start picture:hover>img {
@@ -771,13 +811,25 @@
     margin-block: 20px;
   }
 
+  .skills-end-levels {
+    gap: 10px;
+    margin-top: 30px;
+  }
+
   .skills-end-levels div {
     padding: 15px;
     border-radius: 10px;
+    max-width: 150px;
+
+  }
+
+  .skills-end-levels div h2 {
+    font-size: 0.75rem;
   }
 
   .skills-end-levels div p {
-    margin-top: 5px;
+    margin-top: 0px;
+    font-size: 0.5rem;
   }
 
   .skills-start {
@@ -864,7 +916,7 @@
   max-width: 600px;
   min-width: 500px;
   flex: 1;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity .3s;
 }
 
@@ -900,8 +952,9 @@
 
 .formacoes-card-arrow {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .formacoes-card-arrow svg {
@@ -910,28 +963,36 @@
   cursor: pointer;
 }
 
-.formacoes-card-arrow svg:hover {
+a:hover > .formacoes-card-arrow svg{
   fill: var(--cor-p9);
 }
 
 
 
- /* Diminuindo o tamanho para a responsividade do site */
+/* Diminuindo o tamanho para a responsividade do site */
 @media(max-width: 1200px) {
+  .formacoes-bg {
+    padding: 10vh 0;
+  }
+
   .formacoes>h1 {
     font-size: 2.2rem;
   }
+
   .formacoes-card-box {
     gap: 40px 20px;
   }
+
   .formacoes-card {
     min-width: 400px;
     grid-template-columns: 3fr 7fr 1fr;
   }
+
   .formacoes-card picture img {
     height: 70px;
   }
-  .formacoes-card-content > h1 {
+
+  .formacoes-card-content>h1 {
     font-size: 0.9rem;
   }
 }
@@ -940,8 +1001,8 @@
   .formacoes-card-box {
     justify-content: center;
     align-items: center;
-    flex: 0;
   }
+
   .formacoes-card {
     opacity: 1;
     max-width: 500px;
@@ -949,22 +1010,113 @@
     border: solid 1px var(--cor-n9);
     border-radius: 20px;
   }
+
   .formacoes-card picture {
     padding: 10px;
   }
+
   .formacoes-card-content {
     justify-content: center;
     gap: 10px;
   }
-  .formacoes-card-arrow{
+
+  .formacoes-card-arrow {
     background-color: var(--cor-n9);
     border-radius: 10px;
   }
+
   .formacoes-card-arrow svg {
     fill: #AC3AFF;
   }
 }
 
+@media(max-width: 600px) {
+  .formacoes>h1 {
+    font-size: 1.5rem;
+  }
+
+  .formacoes-card-box {
+    margin-top: 75px;
+  }
+
+  .formacoes-card {
+    min-width: 385px;
+  }
+
+  .formacoes-card picture img {
+    height: 60px;
+  }
+
+  .formacoes-card-content>h1 {
+    font-size: 0.8rem;
+  }
+
+  .formacoes-card-content>p {
+    font-size: 0.75rem;
+  }
+
+  .formacoes-card-arrow {
+    place-content: center;
+  }
+
+  .formacoes-card-arrow svg {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media(max-width: 480px) {
+  .formacoes {
+    text-align: center;
+  }
+  .formacoes-card-box{
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .formacoes-card {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: left;
+    min-width: 285px;
+    align-items: start;
+  }
+
+  .formacoes-card > a  {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+  .formacoes-card-arrow {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .formacoes-card-arrow svg {
+    rotate: -90deg;
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+  }
+  .formacoes-card picture{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    grid-row: 2;
+  }
+
+  .formacoes-card picture img {
+    height: 45px;
+  }
+  .formacoes-card-content {
+    grid-row: 2;
+    align-self: center;
+    padding-bottom: 0px;
+  }
+  .formacoes-card-content>h1 {
+    font-size: 0.6rem;
+  }
+  .formacoes-card-content>p {
+    font-size: 0.5rem;
+  }
+}
 
 
 
@@ -1131,13 +1283,15 @@
 
 .nebula-end-card img {
   border-radius: 20px;
-  
+
 }
-.nebula-end-card:first-child img{
+
+.nebula-end-card:first-child img {
   -webkit-box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
   -moz-box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
   box-shadow: 7px 10px 19px -3px rgba(0, 0, 0, 0.41);
 }
+
 .nebula-end-card h1 {
   font: 700 2.5rem "Poppins", sans-serif;
 }
@@ -1146,79 +1300,206 @@
 
 /* Diminuindo os tamanhos para responsividade */
 @media(max-width: 1200px) {
-  .nebula-start > h1{
+  .nebula-start>h1 {
     font-size: 4rem;
   }
-  .nebula-start > h4{
+
+  .nebula-start>h4 {
     font-size: 0.8rem;
   }
-  .nebula-start > p {
+
+  .nebula-start>p {
     font-size: 0.9rem;
   }
-  .nebula-services-card{
+
+  .nebula-services-card {
     padding-inline: 20px;
   }
-  .nebula-services-card p{
+
+  .nebula-services-card p {
     font-size: 0.6rem;
     max-width: 190px;
   }
-  .nebula-services-card h1{
+
+  .nebula-services-card h1 {
     font-size: 1rem;
   }
-  .nebula-services-card svg{
+
+  .nebula-services-card svg {
     height: 35px;
     width: 35px;
   }
 
   .nebula-services-card:nth-child(1),
-  .nebula-services-card:nth-child(2){
+  .nebula-services-card:nth-child(2) {
     padding-bottom: 20px;
   }
 
-  .nebula-end-card h1{
+  .nebula-end-card h1 {
     font-size: 2rem;
   }
-  .nebula-end-card:first-child img{
+
+  .nebula-end-card:first-child img {
     height: 200px;
     width: 200px;
   }
-  .nebula-end-card:nth-child(2) img{
+
+  .nebula-end-card:nth-child(2) img {
     width: 250px;
   }
 }
 
 /* Quebrar tudo em uma coluna só*/
 @media(max-width: 960px) {
-  .nebula{
+  .nebula {
     grid-template-columns: 1fr;
     place-items: center;
   }
+
   .nebula-start {
     max-width: 600px;
     margin: 0px;
   }
-  .nebula-services-box{
+
+  .nebula-services-box {
     margin-block: 50px;
   }
+
   .nebula-start-services {
     margin-right: 0px;
     margin-top: 30px;
   }
-  .nebula-start-services>h1{
+
+  .nebula-start-services>h1 {
     padding: 10px 35px;
     font-size: 1.2rem;
   }
+
   .nebula-end {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
     align-items: flex-start;
   }
+
   .nebula-end-card {
     padding: 20px;
     height: min-content;
   }
-  .nebula-start-services > div {
+
+  .nebula-start-services>div {
     top: 24px;
+  }
+}
+
+/* Adaptação para o mobile. */
+@media(max-width: 600px) {
+  .nebula-bg {
+    padding: 10vh 0vh;
+  }
+
+  .nebula-start>h1 {
+    font-size: 3rem;
+  }
+
+  .nebula-services-box {
+    gap: 30px;
+    margin-block: 40px;
+  }
+
+  .nebula-services-card {
+    padding: 0px !important;
+    gap: 8px;
+    border: none !important;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .nebula-services-card p {
+    grid-column: 2;
+    font-size: 0.5rem;
+    max-width: 155px;
+  }
+
+  .nebula-services-card h1 {
+    margin-top: 0px;
+    grid-column: 2;
+    font-size: 0.8rem;
+  }
+
+  .nebula-services-card svg {
+    grid-row: 1 / -1;
+    /* Faz o ícone ocupar as duas linhas */
+    align-self: flex-start;
+    padding-right: 15px;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .nebula-services-card:nth-child(3),
+  .nebula-services-card:nth-child(4) {
+    padding: 0px;
+  }
+
+  .nebula-end-card {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nebula-end-card h1 {
+    font-size: 1.25rem;
+  }
+
+  .nebula-end-card:first-child img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .nebula-end-card:nth-child(2) img {
+    width: 150px;
+  }
+}
+
+@media(max-width: 450px) {
+  .nebula-start>p {
+    font-size: 0.75rem;
+    margin: 25px 0;
+  }
+  .nebula-start-services {
+    margin-top: 40px;
+  }
+  .nebula-start-services>h1 {
+    font-size: 1rem;
+    padding: 7px 14px;
+    border-radius: 10px;
+  }
+  .nebula-start-services>div {
+    height: 2px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 130%;
+  }
+  .nebula-end {
+    gap: 10px;
+  }
+  .nebula-end-card {
+    gap: 10px;
+    padding: 12px;
+  }
+  .nebula-end-card h1 {
+    font-size: 1rem;
+  }
+  .nebula-end-card::before {
+    height: 5px;
+  }
+  .nebula-end-card:first-child img {
+    height: 70px;
+    width: 70px;
+  }
+  .nebula-end-card:nth-child(2) img {
+    width: 100px;
   }
 }

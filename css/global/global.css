@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding-top: env(safe-area-inset-top); /* Adiciona espaço seguro no topo */
+  padding-bottom: env(safe-area-inset-bottom); /* Caso precise no rodapé */
 }
 html {
   scroll-behavior: smooth;
