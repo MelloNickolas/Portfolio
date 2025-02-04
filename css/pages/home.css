@@ -4,7 +4,7 @@
 }
 
 .sobre {
-  padding: 0 60px;
+  padding: 0 40px;
   display: flex;
   justify-content: center;
   gap: 0px 140px;
@@ -139,7 +139,8 @@
   }
 
   .sobre-bg {
-    padding: 10vh 0;
+    padding-top: 4vh;
+    padding-bottom: 10vh;
   }
 
   .sobre {
@@ -184,7 +185,7 @@
 }
 
 .projeto {
-  padding: 0 60px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -273,7 +274,7 @@
   color: var(--cor-n0);
   background-color: var(--cor-n8);
   padding: 8px 12px;
-  border-radius: 20%;
+  border-radius: 5px;
 }
 
 .habilidades-links {
@@ -444,10 +445,10 @@
   .card {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 180px;
     box-sizing: border-box;
-    padding-inline: 10%;
-    padding-top: 25px;
+    padding-inline: 12%;
+    padding-top: 18px;
   }
 
   .card-start {
@@ -458,7 +459,15 @@
 
   .card-center {
     padding: 0px;
-    margin-top: 30px;
+    margin-top: 25px;
+  }
+
+  .card-center h2 {
+    font-size: 1rem;
+  }
+
+  .card-center p {
+    font-size: 0.5rem;
   }
 
   .card-end {
@@ -476,10 +485,13 @@
 
   .card-end {
     align-items: center;
+    margin-top: 15px;
+    gap: 15px;
   }
 
   .habilidades {
     place-self: start;
+    gap: 6px;
   }
 
   .habilidades-links a:first-child svg {
@@ -489,8 +501,13 @@
   }
 
   .card-start img {
-    height: 90px;
-    width: 90px;
+    height: 75px;
+    width: 75px;
+  }
+
+  .habilidades p {
+    font-size: 0.5rem;
+    padding: 4px 6px;
   }
 }
 
@@ -510,10 +527,6 @@
   .projeto {
     gap: 50px;
   }
-
-  .card-center p {
-    font-size: 0.6rem;
-  }
 }
 
 
@@ -530,7 +543,7 @@
 }
 
 .skills {
-  padding: 0 60px;
+  padding: 0 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -715,7 +728,6 @@
 
   .skills-end-levels div {
     padding: 20px;
-    border-radius: 150x;
   }
 
   .skills-end div h2 {
@@ -816,19 +828,20 @@
   }
 
   .skills-end-levels div {
-    padding: 15px;
+    padding: 11px;
     border-radius: 10px;
-    max-width: 150px;
+    max-width: 120px;
 
   }
 
   .skills-end-levels div h2 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin-left: 12px;
   }
 
   .skills-end-levels div p {
     margin-top: 0px;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
   }
 
   .skills-start {
@@ -843,6 +856,14 @@
   .skills-start picture img {
     height: 30px;
     width: 30px;
+  }
+
+  .skills-end-levels div:nth-child(1) h2::before,
+  .skills-end-levels div:nth-child(2) h2::before,
+  .skills-end-levels div:nth-child(3) h2::before {
+    width: 5px;
+    height: 2px;
+    left: -12px;
   }
 }
 
@@ -880,7 +901,7 @@
 }
 
 .formacoes {
-  padding: 0 60px;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -962,7 +983,7 @@
   cursor: pointer;
 }
 
-a:hover > .formacoes-card-arrow svg{
+a:hover>.formacoes-card-arrow svg {
   fill: var(--cor-p9);
 }
 
@@ -1068,10 +1089,12 @@ a:hover > .formacoes-card-arrow svg{
   .formacoes {
     text-align: center;
   }
-  .formacoes-card-box{
+
+  .formacoes-card-box {
     gap: 30px;
     margin-top: 40px;
   }
+
   .formacoes-card {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -1080,21 +1103,24 @@ a:hover > .formacoes-card-arrow svg{
     align-items: start;
   }
 
-  .formacoes-card > a  {
+  .formacoes-card>a {
     grid-row: 1;
     grid-column: 1/-1;
   }
+
   .formacoes-card-arrow {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+
   .formacoes-card-arrow svg {
     rotate: -90deg;
     height: 25px;
     width: 25px;
     padding: 5px;
   }
-  .formacoes-card picture{
+
+  .formacoes-card picture {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -1104,14 +1130,17 @@ a:hover > .formacoes-card-arrow svg{
   .formacoes-card picture img {
     height: 45px;
   }
+
   .formacoes-card-content {
     grid-row: 2;
     align-self: center;
     padding-bottom: 0px;
   }
+
   .formacoes-card-content>h1 {
     font-size: 0.6rem;
   }
+
   .formacoes-card-content>p {
     font-size: 0.5rem;
   }
@@ -1146,7 +1175,7 @@ a:hover > .formacoes-card-arrow svg{
 .nebula {
   display: grid;
   grid-template-columns: 8fr 4fr;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 .nebula-start {
@@ -1466,14 +1495,17 @@ a:hover > .formacoes-card-arrow svg{
     font-size: 0.75rem;
     margin: 25px 0;
   }
+
   .nebula-start-services {
     margin-top: 40px;
   }
+
   .nebula-start-services>h1 {
     font-size: 1rem;
     padding: 7px 14px;
     border-radius: 10px;
   }
+
   .nebula-start-services>div {
     height: 2px;
     top: 20px;
@@ -1481,23 +1513,29 @@ a:hover > .formacoes-card-arrow svg{
     transform: translate(-50%, 0%);
     width: 130%;
   }
+
   .nebula-end {
     gap: 10px;
   }
+
   .nebula-end-card {
     gap: 10px;
     padding: 12px;
   }
+
   .nebula-end-card h1 {
     font-size: 1rem;
   }
+
   .nebula-end-card::before {
     height: 5px;
   }
+
   .nebula-end-card:first-child img {
     height: 70px;
     width: 70px;
   }
+
   .nebula-end-card:nth-child(2) img {
     width: 100px;
   }

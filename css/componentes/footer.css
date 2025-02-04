@@ -7,7 +7,7 @@
 .footer{
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 .footerStart h1{
   font: 700 2.5rem/1 "Cormorant Garamond", serif;
