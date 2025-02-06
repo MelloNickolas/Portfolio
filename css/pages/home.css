@@ -189,6 +189,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+
 }
 
 .projeto-conteudo {
@@ -223,7 +224,6 @@
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 2px #bdbdbd;
-  position: relative;
 }
 
 .card-start {
@@ -338,6 +338,11 @@
   /* Cor do ícone no hover */
 }
 
+.responsivo {
+  background-color: var(--cor-p14) !important; 
+  color: var(--cor-p5) !important;
+}
+
 
 
 /* Diminuir o tamanho para continuar responsivo */
@@ -442,13 +447,33 @@
 
 /* Mudando os cards para o Mobile */
 @media(max-width: 600px) {
+  .projeto{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .projeto-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    display: flex; /* Garante que os cards fiquem em linha */
+    transition: transform 0.5s ease-in-out; /* Transição suave entre os slides */
+    width: 100%;
+  }
   .card {
     display: flex;
     flex-direction: column;
-    max-width: 180px;
-    box-sizing: border-box;
-    padding-inline: 12%;
+    width: 160px;
+    min-width: 160px;
+    padding-inline: 20px;
     padding-top: 18px;
+    box-sizing: content-box;
+    opacity: 0.5; /* Opacidade inicial dos cards */
+    transition: opacity 0.5s ease-in-out; /* Transição suave na opacidade */
+    margin-bottom: 10px;
+  }
+  .card.active {
+    opacity: 1; /* Card ativo com opacidade total */
+    transform: scale(1.2);
   }
 
   .card-start {
@@ -476,7 +501,7 @@
     align-items: start;
     margin-top: 20px;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .habilidades-links {
@@ -509,6 +534,7 @@
     font-size: 0.5rem;
     padding: 4px 6px;
   }
+
 }
 
 @media(max-width:450px) {
