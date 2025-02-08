@@ -226,6 +226,44 @@
   box-shadow: 0px 0px 10px 2px #bdbdbd;
 }
 
+/* Parte do ver mais nos cards dos projetos*/
+.card:last-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 60px;
+}
+.card:last-of-type p{
+  font: 500 0.8rem/1.4 "Poppins", sans-serif;
+  color: var(--cor-n3);
+  text-align: center;
+}
+.card:last-of-type a{
+  font: 500 0.8rem/1 "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--cor-p14); 
+  color: var(--cor-p5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.card:last-of-type a svg {
+  fill: var(--cor-p5);
+  transition: 0.3s;
+}
+.card:last-of-type a:hover {
+  background-color: var(--cor-p10);
+  color: var(--cor-p2);
+}
+.card:last-of-type a:hover svg {
+  fill: var(--cor-p2);
+}
+
+
 .card-start {
   padding-left: 30px;
   padding-block: 20px;
@@ -419,6 +457,9 @@
     height: 12px;
     width: 12px;
   }
+  .card:last-of-type {
+    gap: 25px;
+  }
 }
 
 /* Mudando para uma coluna */
@@ -473,7 +514,27 @@
   }
   .card.active {
     opacity: 1; /* Card ativo com opacidade total */
-    transform: scale(1.2);
+    transform: scale(1);
+  }
+  .card:not(.active) {
+    transform: scale(0.9);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card:last-of-type {
+    gap: 30px;
+    height: 279px;
+  }
+  .card:last-of-type a svg {
+    font-size: 0.6rem;
+  }
+  .card:last-of-type a {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+  }
+  .card:last-of-type a svg {
+    height: 15px;
+    width: 15px;
   }
 
   .card-start {
@@ -554,6 +615,10 @@
     gap: 50px;
   }
 }
+
+
+
+
 
 
 
