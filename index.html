@@ -9,11 +9,11 @@
   <meta name="description"
     content="Portifólio pessoal que expões meus projetos e minhas habilidades mostrando do que sou capaz.">
 
-  <link rel="icon" href="./imgs/editar.svg" type="image/svg+xml">
+  <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./dist/styles.min.css" as="style">
+  <link rel="stylesheet" href="./dist/styles.min.css" />
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -635,7 +635,7 @@
         </div>
         <div class="nebula-end-card">
           <h1 class="cor-n10">INSTAGRAM</h1>
-          <img src="./imgs/nebula/Nebula-insta.png" alt="Nebula-Insta" height="auto" width="300px">
+          <img src="./imgs/nebula/Nebula-insta.png" alt="Nebula-insta" height="auto" width="300px">
         </div>
       </div>
     </div>
@@ -736,9 +736,7 @@
     </svg>
   </button>
 
-  <script src="./js/modalSobre.js"></script>
-  <script src="./js/backToTop.js"></script>
-  <script src="./js/slidesProjectsMobile.js"></script>
+  <script type="module" src="./dist/script.min.js"></script>
 </body>
 
 </html>
