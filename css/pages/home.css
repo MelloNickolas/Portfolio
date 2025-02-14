@@ -189,7 +189,6 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-
 }
 
 .projeto-conteudo {
@@ -228,37 +227,42 @@
 
 /* Parte do ver mais nos cards dos projetos*/
 .card:last-of-type {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100px;
   gap: 60px;
 }
-.card:last-of-type p{
+
+.card:last-of-type p {
   font: 500 0.8rem/1.4 "Poppins", sans-serif;
   color: var(--cor-n3);
   text-align: center;
 }
-.card:last-of-type a{
+
+.card:last-of-type a {
   font: 500 0.8rem/1 "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: var(--cor-p14); 
+  background-color: var(--cor-p14);
   color: var(--cor-p5);
   padding: 10px 20px;
   border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 .card:last-of-type a svg {
   fill: var(--cor-p5);
   transition: 0.3s;
 }
+
 .card:last-of-type a:hover {
   background-color: var(--cor-p10);
   color: var(--cor-p2);
 }
+
 .card:last-of-type a:hover svg {
   fill: var(--cor-p2);
 }
@@ -377,7 +381,7 @@
 }
 
 .responsivo {
-  background-color: var(--cor-p14) !important; 
+  background-color: var(--cor-p14) !important;
   color: var(--cor-p5) !important;
 }
 
@@ -457,6 +461,7 @@
     height: 12px;
     width: 12px;
   }
+
   .card:last-of-type {
     gap: 25px;
   }
@@ -488,17 +493,34 @@
 
 /* Mudando os cards para o Mobile */
 @media(max-width: 600px) {
-  .projeto{
-    overflow-x: hidden;
-    width: 100%;
+  .projeto {
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
+
+  .projeto-conteudo {
+    padding: 0 40px;
+  }
+
+  .card:last-of-type {
+    display: flex;
+  }
+
   .projeto-cards {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    display: flex; /* Garante que os cards fiquem em linha */
-    transition: transform 0.5s ease-in-out; /* Transição suave entre os slides */
-    width: 100%;
+    flex-direction: row; /* Cards em linha */
+        overflow-x: auto; /* Ativa rolagem horizontal */
+        scroll-behavior: smooth; /* Scroll suave */
+        white-space: nowrap; /* Evita quebra de linha */
+        padding-block: 10px;/* Espaço extra para evitar corte */
+        width: 100vw; /* Garante que o container possa ultrapassar a `.box` */
+        margin-left: -20px; /* Ajuste para garantir que os cards fiquem alinhados */
+        padding-left: 50px;
+        scrollbar-width: none;  /* Para navegadores que suportam isso (Firefox) */
+        -ms-overflow-style: none;  /* Para o Internet Explorer */
+  }
+  .projeto-cards::-webkit-scrollbar {
+    display: none;  /* Para navegadores WebKit (Chrome, Safari) */
   }
   .card {
     display: flex;
@@ -508,30 +530,24 @@
     padding-inline: 20px;
     padding-top: 18px;
     box-sizing: content-box;
-    opacity: 0.5; /* Opacidade inicial dos cards */
-    transition: opacity 0.5s ease-in-out; /* Transição suave na opacidade */
     margin-bottom: 10px;
-  }
-  .card.active {
-    opacity: 1; /* Card ativo com opacidade total */
-    transform: scale(1);
-  }
-  .card:not(.active) {
-    transform: scale(0.9);
-    transition: transform 0.5s ease-in-out;
+    flex-shrink: 0;
   }
 
   .card:last-of-type {
     gap: 30px;
     height: 279px;
   }
+
   .card:last-of-type a svg {
     font-size: 0.6rem;
   }
+
   .card:last-of-type a {
     padding: 8px 16px;
     font-size: 0.7rem;
   }
+
   .card:last-of-type a svg {
     height: 15px;
     width: 15px;
@@ -554,25 +570,21 @@
 
   .card-center p {
     font-size: 0.5rem;
+    white-space: normal;
   }
 
   .card-end {
     padding: 0px;
-    justify-content: center;
-    align-items: start;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     gap: 20px;
     padding-bottom: 10px;
+    height: max-content;
   }
 
   .habilidades-links {
     align-self: auto;
-  }
-
-  .card-end {
-    align-items: center;
-    margin-top: 15px;
-    gap: 15px;
   }
 
   .habilidades {
@@ -899,6 +911,10 @@
   .skills-start picture img {
     height: 40px;
     width: 40px;
+  }
+  .card:last-of-type p {
+    white-space: normal;
+    font-size: 0.75rem;
   }
 }
 
@@ -1277,7 +1293,7 @@ a:hover>.formacoes-card-arrow svg {
   margin-right: 80px;
 }
 
-.nebula-start>h4 {
+.nebula-start>p {
   font: 400 1rem/1 "Poppins", sans-serif;
 }
 
@@ -1423,7 +1439,7 @@ a:hover>.formacoes-card-arrow svg {
     font-size: 4rem;
   }
 
-  .nebula-start>h4 {
+  .nebula-start>p {
     font-size: 0.8rem;
   }
 
