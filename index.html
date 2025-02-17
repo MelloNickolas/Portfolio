@@ -12,8 +12,8 @@
   <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./dist/styles.min.css" as="style">
-  <link rel="stylesheet" href="./dist/styles.min.css" />
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -164,8 +164,7 @@
       </div>
 
       <picture class="sobre-foto">
-        <img src="./imgs/miinha-foto(Extend)-mobile.webp" height="250" width="250" alt="Uma foto minha!">
-        <source media="(min-width: 600px)" srcset="./imgs/miinha-foto(Extend)webp" >
+        <img src="./imgs/miinha-foto(Extend).webp" height="250" width="250" alt="Uma foto minha!">
       </picture>
     </div>
   </main>
@@ -412,28 +411,36 @@
     <div class="skills container">
       <div class="skills-start">
         <picture>
-          <img src="./imgs/habilidades/html.webp" alt="Html-5" height="100px" width="100px">
+          <img src="./imgs/habilidades/html.webp" alt="Html-5" title="Html-5" height="100px" width="100px">
+          <span class="tooltip-text">Html-5</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/css.webp" alt="Css-3" height="100px" width="100px">
+          <span class="tooltip-text">Css-3</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/javascript.webp" alt="javascript" height="100px" width="100px">
+          <span class="tooltip-text">Javascript</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/react.webp" alt="React" height="100px" width="100px">
+          <span class="tooltip-text">React</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/sass.webp" alt="sass" height="100px" width="100px">
+          <span class="tooltip-text">Sass</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/tailwind.webp" alt="Tailwind" height="100px" width="100px">
+          <span class="tooltip-text">Tailwind</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/bootstrap.webp" alt="bootstrap" height="100px" width="100px">
+          <span class="tooltip-text">Bootstrap</span>
         </picture>
         <picture>
           <img src="./imgs/habilidades/figma.webp" alt="figma" height="100px" width="100px">
+          <span class="tooltip-text">Figma</span>
         </picture>
       </div>
       <div class="skills-end">

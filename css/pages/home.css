@@ -508,20 +508,32 @@
   }
 
   .projeto-cards {
-    flex-direction: row; /* Cards em linha */
-        overflow-x: auto; /* Ativa rolagem horizontal */
-        scroll-behavior: smooth; /* Scroll suave */
-        white-space: nowrap; /* Evita quebra de linha */
-        padding-block: 10px;/* Espaço extra para evitar corte */
-        width: 100vw; /* Garante que o container possa ultrapassar a `.box` */
-        margin-left: -20px; /* Ajuste para garantir que os cards fiquem alinhados */
-        padding-left: 50px;
-        scrollbar-width: none;  /* Para navegadores que suportam isso (Firefox) */
-        -ms-overflow-style: none;  /* Para o Internet Explorer */
+    flex-direction: row;
+    /* Cards em linha */
+    overflow-x: auto;
+    /* Ativa rolagem horizontal */
+    scroll-behavior: smooth;
+    /* Scroll suave */
+    white-space: nowrap;
+    /* Evita quebra de linha */
+    padding-block: 10px;
+    /* Espaço extra para evitar corte */
+    width: 100vw;
+    /* Garante que o container possa ultrapassar a `.box` */
+    margin-left: -20px;
+    /* Ajuste para garantir que os cards fiquem alinhados */
+    padding-left: 50px;
+    scrollbar-width: none;
+    /* Para navegadores que suportam isso (Firefox) */
+    -ms-overflow-style: none;
+    /* Para o Internet Explorer */
   }
+
   .projeto-cards::-webkit-scrollbar {
-    display: none;  /* Para navegadores WebKit (Chrome, Safari) */
+    display: none;
+    /* Para navegadores WebKit (Chrome, Safari) */
   }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -665,7 +677,32 @@
   padding: 21px;
   border-radius: 20px;
   border: solid 4px var(--cor-n7);
+  position: relative;
   transition: background-color ease-in 0.2s, border 0.7s;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: var(--cor-n10);
+  color: var(--cor-n4);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+  -webkit-box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
+  box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
+}
+
+.skills-start picture:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .skills-start picture img {
@@ -912,9 +949,13 @@
     height: 40px;
     width: 40px;
   }
+
   .card:last-of-type p {
     white-space: normal;
     font-size: 0.75rem;
+  }
+  .tooltip-text {
+    font-size: 10px;
   }
 }
 
