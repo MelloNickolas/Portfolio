@@ -678,7 +678,7 @@
   border-radius: 20px;
   border: solid 4px var(--cor-n7);
   position: relative;
-  transition: background-color ease-in 0.2s, border 0.7s;
+  transition: background-color ease-in 0.2s, border 0.7s, ;
 }
 
 .tooltip-text {
@@ -1334,8 +1334,9 @@ a:hover>.formacoes-card-arrow svg {
   margin-right: 80px;
 }
 
-.nebula-start>p {
+.nebula-start>p:first-of-type {
   font: 400 1rem/1 "Poppins", sans-serif;
+  margin: 10px 0px;
 }
 
 .nebula-start>h1 {
@@ -1575,7 +1576,7 @@ a:hover>.formacoes-card-arrow svg {
   }
 
   .nebula-start>h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .nebula-services-box {
@@ -1641,7 +1642,8 @@ a:hover>.formacoes-card-arrow svg {
 @media(max-width: 450px) {
   .nebula-start>p {
     font-size: 0.75rem;
-    margin: 25px 0;
+    margin: 20px 0;
+
   }
 
   .nebula-start-services {

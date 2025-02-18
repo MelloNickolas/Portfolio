@@ -43,3 +43,31 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Classes usadas para as animações de scroll*/
+.hiddenLeft {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1.75s;
+}
+.hiddenRight {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(100%);
+  transition: all 1.75s;
+}
+.hiddenUp {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(10%);
+  transition: all 1.75s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+  transform: translateY(0);
+  transition: all 1.5s;
+}

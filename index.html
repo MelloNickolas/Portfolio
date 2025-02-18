@@ -12,8 +12,8 @@
   <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="preload" href="./dist/styles.min.css" as="style">
+  <link rel="stylesheet" href="./dist/styles.min.css"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
   <main class="sobre-bg" aria-label="sobre mim">
     <div class="sobre container">
 
-      <div class="sobre-conteudo">
+      <div class="sobre-conteudo hiddenLeft">
         <h1 class="cor-n10">SOBRE MIM</h1>
         <p class="cor-n7">Meu nome é Nickolas Passos Homem de Mello, tenho 18 anos e sou um jovem na área de programação
           e empreendedorismo digital.</p>
@@ -163,8 +163,8 @@
         </div>
       </div>
 
-      <picture class="sobre-foto">
-        <img src="./imgs/miinha-foto(Extend).webp" height="250" width="250" alt="Uma foto minha!">
+      <picture class="sobre-foto hiddenRight">
+        <img src="./imgs/miinha-foto(Extend).webp" height="250" width="250" alt="Uma foto minha!" loading="lazy">
       </picture>
     </div>
   </main>
@@ -191,7 +191,7 @@
   <!-- MEUS PROJETOS-->
   <article class="projeto-bg" aria-label="meus-projetos" id="projetos">
     <div class="projeto container">
-      <div class="projeto-conteudo">
+      <div class="projeto-conteudo hiddenLeft">
         <h1 class="cor-n0">Meus Projetos<span class="cor-p9">.</span></h1>
         <p class="cor-n3">Últimas aplicações realizadas por mim com o intuito de desenvolver e aprimorar minhas
           habilidades.</p>
@@ -206,7 +206,7 @@
 
       <div class="projeto-cards">
 
-        <div class="card">
+        <div class="card hiddenUp">
           <div class="card-start">
             <img src="./imgs/projetos/bikcraft.webp" alt="Projeto Bikcraft" height="140px" width="140px">
           </div>
@@ -262,7 +262,7 @@
 
 
 
-        <div class="card">
+        <div class="card hiddenUp">
           <div class="card-start">
             <img src="./imgs/projetos/flexblog.webp" alt="Projeto Flexblog" height="140px" width="140px">
           </div>
@@ -317,7 +317,7 @@
         <!---------------------------------------- Fim CARD ---------------------------------------------------------------------->
 
 
-        <div class="card">
+        <div class="card hiddenUp">
           <div class="card-start">
             <img src="./imgs/projetos/portfolio.webp" alt="Projeto Portfolio" height="140px" width="140px">
           </div>
@@ -370,7 +370,7 @@
         </div>
         <!---------------------------------------- Fim CARD ---------------------------------------------------------------------->
 
-        <div class="card">
+        <div class="card hiddenUp">
           <p>Esses são os meus projetos mais recentes. <br> Aproveita e dá uma olhada em todos ! </p>
           <a href="" aria-label="Ver todos os projetos">
             Ver projetos
@@ -409,7 +409,7 @@
 
   <article class="skills-bg" aria-label="Minhas habilidades">
     <div class="skills container">
-      <div class="skills-start">
+      <div class="skills-start hiddenUp">
         <picture>
           <img src="./imgs/habilidades/html.webp" alt="Html-5" title="Html-5" height="100px" width="100px">
           <span class="tooltip-text">Html-5</span>
@@ -443,7 +443,7 @@
           <span class="tooltip-text">Figma</span>
         </picture>
       </div>
-      <div class="skills-end">
+      <div class="skills-end hiddenRight">
         <h1 class="cor-n0">Habilidades<span class="cor-p9">.</span></h1>
         <p class="cor-n4">Um pouco das minhas habilidades e linguagens que aplico nos meus projetos, para ter melhor
           compreensão vou
@@ -476,9 +476,9 @@
 
   <article class="formacoes-bg" aria-label="Formações e certificações" id="formacoes">
     <div class="formacoes container">
-      <h1 class="cor-n0">Formações & Certificações</h1>
+      <h1 class="cor-n0 hiddenUp">Formações & Certificações</h1>
 
-      <div class="formacoes-card-box">
+      <div class="formacoes-card-box hiddenUp">
         <div class="formacoes-card">
           <picture>
             <img src="./imgs/formacoes/etec.webp" alt="Logo etec" height="85px" width="auto">
@@ -568,7 +568,7 @@
 
   <article class="nebula-bg" aria-label="nebula" id="nebula">
     <div class="nebula container">
-      <div class="nebula-start">
+      <div class="nebula-start hiddenLeft">
 
         <p class="cor-p12">Minha Empresa</p>
         <h1 class="cor-n10">NEBULA<span class="cor-p8">.</span></h1>
@@ -636,7 +636,7 @@
         </div>
       </div>
 
-      <div class="nebula-end">
+      <div class="nebula-end hiddenRight">
         <div class="nebula-end-card">
           <h1 class="cor-n10">LOGO</h1>
           <img src="./imgs/nebula/Nebula-Logo.webp" alt="Nebula-Logo" height="250px" width="250px">

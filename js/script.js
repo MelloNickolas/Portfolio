@@ -1,2 +1,3 @@
+import "./scrollanimations.js";
 import "./modalSobre.js";
-import "./backToTop.js"
+import "./backToTop.js";
