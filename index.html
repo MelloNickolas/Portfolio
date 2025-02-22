@@ -12,8 +12,8 @@
   <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./dist/styles.min.css" as="style">
-  <link rel="stylesheet" href="./dist/styles.min.css"/>
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -195,13 +195,13 @@
         <h1 class="cor-n0">Meus Projetos<span class="cor-p9">.</span></h1>
         <p class="cor-n3">Últimas aplicações realizadas por mim com o intuito de desenvolver e aprimorar minhas
           habilidades.</p>
-        <a href="" class="btn" aria-label="Ver todos os projetos">
+        <button onclick="changePage('./projetos.html')" class="btn" aria-label="Ver todos os projetos">
           <p>Ver Projetos</p>
           <!-- Icon Arrow-->
           <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
             <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
           </svg>
-        </a>
+        </button>
       </div>
 
       <div class="projeto-cards">
@@ -372,7 +372,7 @@
 
         <div class="card hiddenUp">
           <p>Esses são os meus projetos mais recentes. <br> Aproveita e dá uma olhada em todos ! </p>
-          <a href="" aria-label="Ver todos os projetos">
+          <a href="./projetos.html" aria-label="Ver todos os projetos">
             Ver projetos
             <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px"><path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z"/></svg>
           </a>
@@ -744,7 +744,7 @@
     </svg>
   </button>
 
-  <script type="module" src="./dist/script.min.js"></script>
+  <script type="module" src="./js/script.js" defer></script>
 </body>
 
 </html>

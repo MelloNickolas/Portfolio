@@ -678,7 +678,7 @@
   border-radius: 20px;
   border: solid 4px var(--cor-n7);
   position: relative;
-  transition: background-color ease-in 0.2s, border 0.7s, ;
+  transition: background-color 0.3s, border 0.6s;
 }
 
 .tooltip-text {

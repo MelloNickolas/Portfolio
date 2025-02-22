@@ -6,6 +6,7 @@ html ,body {
   padding-bottom: env(safe-area-inset-bottom); /* Caso precise no rodapé */
   overflow-x: hidden;
   width: 100%;
+  transition: opacity 1s ease;
 }
 html {
   scroll-behavior: smooth;
@@ -70,4 +71,10 @@ img {
   transform: translateX(0);
   transform: translateY(0);
   transition: all 1.5s;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
 }
