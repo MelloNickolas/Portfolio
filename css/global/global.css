@@ -4,10 +4,23 @@ html ,body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding-top: env(safe-area-inset-top); /* Adiciona espaço seguro no topo */
   padding-bottom: env(safe-area-inset-bottom); /* Caso precise no rodapé */
-  overflow-x: hidden;
   width: 100%;
-  transition: opacity 1s ease;
+  overflow-x: hidden;
 }
+body{
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+/* Classe que faz a página aparecer suavemente */
+body.fade-in {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+/* Classe que faz a página sumir antes da troca */
+body.fade-out {
+  opacity: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -50,19 +63,19 @@ img {
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-100%);
-  transition: all 1.75s;
+  transition: all 1s;
 }
 .hiddenRight {
   opacity: 0;
   filter: blur(10px);
   transform: translateX(100%);
-  transition: all 1.75s;
+  transition: all 1s;
 }
 .hiddenUp {
   opacity: 0;
   filter: blur(10px);
   transform: translateY(10%);
-  transition: all 1.75s;
+  transition: all 1s;
 }
 
 .show {
@@ -70,11 +83,5 @@ img {
   filter: blur(0px);
   transform: translateX(0);
   transform: translateY(0);
-  transition: all 1.5s;
-}
-.fade-out {
-  opacity: 0;
-}
-.fade-in {
-  opacity: 1;
+  transition: all 1s;
 }
