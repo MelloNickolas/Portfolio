@@ -592,8 +592,8 @@
     align-items: center;
     margin-top: 20px;
     gap: 20px;
-    padding-bottom: 10px;
-    height: max-content;
+    padding-bottom: 15px;
+    height: 100%;
   }
 
   .habilidades-links {

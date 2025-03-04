@@ -9,8 +9,8 @@
   <title>Meus Projetos</title>
   <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./dist/styles.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="./dist/styles.min.css"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 <body id="projetos">  
   <header id="header-projetos" class="header-bg">
     <div class="header container">
-      <h1>Meus <span class="cor-p9" >Projetos</span></h1>
+      <h1>Meus <span class="cor-p9">Projetos</span></h1>
       <a href="./index.html">Voltar ao Inicio</a>
     </div>
   </header>
@@ -37,7 +37,7 @@
     </svg>
   </button>
 
-  <script type="module" src="./js/script.js"></script>
+  <script src="./dist/script.min.js" defer></script>
 </body>
 
 </html>

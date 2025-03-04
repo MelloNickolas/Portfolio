@@ -13,8 +13,8 @@
   <link rel="icon" href="./imgs/codigo-de-exibicao.svg" type="image/svg+xml">
 
   <!-- Puxando meu Css com preload para carregar junto com meu css -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="./dist/styles.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="./dist/styles.min.css"/>
 
   <!-- Importação das fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -755,7 +755,7 @@
     </svg>
   </button>
 
-  <script type="module" src="./js/script.js" defer></script>
+  <script src="./dist/script.min.js" defer></script>
 </body>
 
 </html>
