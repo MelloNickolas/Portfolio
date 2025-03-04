@@ -1,4 +1,4 @@
-fetch("../dados/projetos.json") // buscando o arquivo
+fetch("https://mellonickolas.github.io/Portfolio/dados/projetos.json") // buscando o arquivo
   .then(response => response.json()) // Convertendo meus dados para Json
   .then(projetos => {
     let projetosContainer = document.getElementById("projetosContainer");
