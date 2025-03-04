@@ -1,15 +1,15 @@
 html ,body {
   margin: 0px;
   padding: 0;
+}
+body{
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   padding-top: env(safe-area-inset-top); /* Adiciona espaço seguro no topo */
   padding-bottom: env(safe-area-inset-bottom); /* Caso precise no rodapé */
   width: 100%;
   overflow-x: hidden;
-}
-body{
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
 }
 /* Classe que faz a página aparecer suavemente */
 body.fade-in {

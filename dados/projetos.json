@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "imagem": "./imgs/projetos/bikcraft.webp",
+    "titulo": "Bikcraft",
+    "descricao": "Uma loja virtual que vende bicicletas e oferece seguro para as mesmas.",
+    "linguagens": ["html", "css", "js", "responsivo"],
+    "github": "https://github.com/MelloNickolas/Projects-Origamid/tree/main/Bikcraft",
+    "deploy": "https://mellonickolas.github.io/Projects-Origamid/Bikcraft/"
+  },
+  {
+    "id": 2,
+    "imagem": "./imgs/projetos/flexblog.webp",
+    "titulo": "FlexBlog",
+    "descricao": "Um blog que mostra as últimas notícias e oferece planos para obter informações secretas.",
+    "linguagens": ["html", "css", "responsivo"],
+    "github": "https://github.com/MelloNickolas/Projects-Origamid/tree/main/Bikcraft",
+    "deploy": "https://mellonickolas.github.io/Projects-Origamid/Bikcraft/"
+  }
+]
