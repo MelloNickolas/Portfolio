@@ -1,5 +1,4 @@
 window.addEventListener("load", () => {
-  console.log("Página completamente carregada!"); // Teste para ver se o script rodou
   document.body.classList.add("fade-in");
 });
 

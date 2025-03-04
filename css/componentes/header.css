@@ -1,5 +1,6 @@
 .header-bg {
   background-color: var(--cor-n0);
+  padding-top: env(safe-area-inset-top); /* Adiciona espaço seguro no topo */
 }
 
 .header {

@@ -1,7 +1,7 @@
 .footer-bg{
   background-color: var(--cor-n0);
   padding-top: 20vh;
-  padding-bottom: 10vh;
+  padding-bottom: env(safe-area-inset-bottom); /* Caso precise no rodapé */
   border-top: 2px solid var(--cor-n1);
 }
 .footer{
@@ -52,6 +52,7 @@
   font: 400 1rem/1 "Poppins", sans-serif;
   grid-column: 1/-1;
   margin-top: 120px;
+  margin-bottom: 10vh;
 }
 
 

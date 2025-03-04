@@ -16,5 +16,23 @@
     "linguagens": ["html", "css", "responsivo"],
     "github": "https://github.com/MelloNickolas/Projects-Origamid/tree/main/Bikcraft",
     "deploy": "https://mellonickolas.github.io/Projects-Origamid/Bikcraft/"
+  },
+  {
+    "id": 3,
+    "imagem": "./imgs/projetos/portfolio.webp",
+    "titulo": "PortFolio",
+    "descricao": "Um portfólio para mostrar as habilidades e formações de um programador.",
+    "linguagens": ["html", "css", "responsivo"],
+    "github": "https://github.com/MelloNickolas/Projects-Origamid/tree/main/Portifolio-Project",
+    "deploy": "https://mellonickolas.github.io/Projects-Origamid/Portifolio-Project/"   
+  },
+  {
+    "id": 4,
+    "imagem": "./imgs/projetos/refactor.webp",
+    "titulo": "Refactor",
+    "descricao": "Um site realizado para o treinamento de designs responsivos.",
+    "linguagens": ["html", "css", "responsivo"],
+    "github": "https://github.com/MelloNickolas/Projects-Origamid/tree/main/Refactor-Exercise(Dark)",
+    "deploy": "https://mellonickolas.github.io/Projects-Origamid/Refactor-Exercise(Dark)/"   
   }
 ]

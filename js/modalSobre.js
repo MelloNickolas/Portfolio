@@ -5,7 +5,6 @@ const modalOverlay = document.getElementById('modalOverlay');
 
 // Verifica se os elementos existem antes de adicionar eventos
 if (openModalBtn && closeModalBtn && modalOverlay) {
-    console.log("Modal encontrado. Executando código...");
 
     // Abrir o modal
     openModalBtn.addEventListener('click', () => {
@@ -24,5 +23,4 @@ if (openModalBtn && closeModalBtn && modalOverlay) {
         }
     });
 } else {
-    console.log("Modal não encontrado. Código ignorado.");
 }

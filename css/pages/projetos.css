@@ -1,13 +1,20 @@
 /* Ajustando cores */
 #projetos {
-  background-color: var(--cor-n10);
+  background-image: linear-gradient(#e4e9f0 1px, transparent 1px), linear-gradient(to right, #e4e9f0 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-color: #ecf0f5;
 }
+
 #header-projetos {
-  background-color: var(--cor-n10);
+  background: transparent;
 }
+
 #header-projetos h1 {
   color: var(--cor-p1);
+  display: block;
+  text-align: center;
 }
+
 #header-projetos a {
   color: var(--cor-p1);
   font: 500 1rem/1 "Poppins", sans-serif;
@@ -17,6 +24,20 @@
   opacity: 1;
   transition: all 1s;
 }
+
 #header-projetos a:hover {
   opacity: 0.5;
+}
+
+#projetosContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+  margin-block: 10vh;
+}
+
+@media(max-width: 500px) {
 }

@@ -226,7 +226,7 @@
 }
 
 /* Parte do ver mais nos cards dos projetos*/
-.card:last-of-type {
+#index .card:last-of-type {
   display: none;
   justify-content: center;
   align-items: center;
@@ -234,13 +234,13 @@
   gap: 60px;
 }
 
-.card:last-of-type p {
+#index .card:last-of-type p {
   font: 500 0.8rem/1.4 "Poppins", sans-serif;
   color: var(--cor-n3);
   text-align: center;
 }
 
-.card:last-of-type a {
+#index .card:last-of-type a {
   font: 500 0.8rem/1 "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -253,17 +253,17 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.card:last-of-type a svg {
+#index .card:last-of-type a svg {
   fill: var(--cor-p5);
   transition: 0.3s;
 }
 
-.card:last-of-type a:hover {
+#index .card:last-of-type a:hover {
   background-color: var(--cor-p10);
   color: var(--cor-p2);
 }
 
-.card:last-of-type a:hover svg {
+#index .card:last-of-type a:hover svg {
   fill: var(--cor-p2);
 }
 
@@ -296,7 +296,7 @@
 
 .card-end {
   display: flex;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-right: 20px;
   flex-direction: column;
@@ -433,7 +433,7 @@
   }
 
   .card-end {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-right: 15px;
   }
 
@@ -462,7 +462,7 @@
     width: 12px;
   }
 
-  .card:last-of-type {
+  #index .card:last-of-type {
     gap: 25px;
   }
 }
@@ -503,7 +503,7 @@
     padding: 0 40px;
   }
 
-  .card:last-of-type {
+  #index .card:last-of-type {
     display: flex;
   }
 
@@ -512,6 +512,7 @@
     /* Cards em linha */
     overflow-x: auto;
     /* Ativa rolagem horizontal */
+    overflow-y: hidden;
     scroll-behavior: smooth;
     /* Scroll suave */
     white-space: nowrap;
@@ -546,21 +547,21 @@
     flex-shrink: 0;
   }
 
-  .card:last-of-type {
+  #index .card:last-of-type {
     gap: 30px;
     height: 279px;
   }
 
-  .card:last-of-type a svg {
+  #index .card:last-of-type a svg {
     font-size: 0.6rem;
   }
 
-  .card:last-of-type a {
+  #index .card:last-of-type a {
     padding: 8px 16px;
     font-size: 0.7rem;
   }
 
-  .card:last-of-type a svg {
+  #index .card:last-of-type a svg {
     height: 15px;
     width: 15px;
   }
@@ -950,7 +951,7 @@
     width: 40px;
   }
 
-  .card:last-of-type p {
+  #index .card:last-of-type p {
     white-space: normal;
     font-size: 0.75rem;
   }

@@ -1,13 +1,14 @@
 fetch("../dados/projetos.json") // buscando o arquivo
   .then(response => response.json()) // Convertendo meus dados para Json
   .then(projetos => {
-    let projetosContainer = document.getElementById("projetos");
+    let projetosContainer = document.getElementById("projetosContainer");
 
-    projetos.forEach(projeto => {
-      let div = document.createElement("div")
-      div.classList.add("card")
+    if (projetosContainer) {
+      projetos.forEach(projeto => {
+        let div = document.createElement("div")
+        div.classList.add("card")
 
-      div.innerHTML = `
+        div.innerHTML = `
           <div class="card-start">
             <img src="${projeto.imagem}" alt="${projeto.titulo}">        
           </div>
@@ -19,7 +20,9 @@ fetch("../dados/projetos.json") // buscando o arquivo
           <div class="card-end">
 
             <div class="habilidades">
-              ${projeto.linguagens.map(hab => `<p>${hab}</p>`).join(' ')}
+              ${projeto.linguagens.map(hab => `
+                <p class="${hab === 'responsivo' ? 'responsivo' : ''}">${hab}</p>
+              `).join('')}
             </div>
 
             <div class="habilidades-links">
@@ -57,13 +60,9 @@ fetch("../dados/projetos.json") // buscando o arquivo
             </div>
           </div>
           `;
-      projetosContainer.appendChild(div);
-    });
+        projetosContainer.appendChild(div);
+      });
+    }
   })
 
-  .catch(error => console.error('Erro ao carregar o JSON:', error));
-  fetch("../dados/projetos.json")
-  .then(response => response.json())
-  .then(projetos => console.log(projetos))
-  .catch(error => console.error('Erro ao carregar o JSON:', error));
-  
+
