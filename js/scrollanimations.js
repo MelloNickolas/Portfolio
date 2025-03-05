@@ -1,5 +1,3 @@
-const elementsLeft = document.querySelectorAll(".hiddenLeft")
-const elementsRight = document.querySelectorAll(".hiddenRight")
 const elementsUp = document.querySelectorAll(".hiddenUp")
 
 // Crio essa constante=e comum interdectionObserver para poder observar
@@ -21,7 +19,5 @@ const myObserver = new IntersectionObserver(
 )
 
 /* Aqui eu puxo o observer e falo para qual elemento ele vai observar */
-elementsLeft.forEach((element) => myObserver.observe(element))
-elementsRight.forEach((element) => myObserver.observe(element))
 elementsUp.forEach((element) => myObserver.observe(element))
 

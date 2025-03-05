@@ -508,31 +508,26 @@
   }
 
   .projeto-cards {
+    display: flex;
     flex-direction: row;
-    /* Cards em linha */
-    overflow-x: auto;
-    /* Ativa rolagem horizontal */
+    gap: 10px;
+    overflow-x: scroll;
     overflow-y: hidden;
-    scroll-behavior: smooth;
-    /* Scroll suave */
+    padding: 5px 40px; /* Adicionando mais padding para garantir o afastamento das bordas */
+    margin: 0 auto; /* Garantir que a área de rolagem fique centralizada, se necessário */
+    max-width: 100%;
     white-space: nowrap;
-    /* Evita quebra de linha */
-    padding-block: 10px;
-    /* Espaço extra para evitar corte */
-    width: 100vw;
-    /* Garante que o container possa ultrapassar a `.box` */
-    margin-left: -20px;
-    /* Ajuste para garantir que os cards fiquem alinhados */
-    padding-left: 50px;
-    scrollbar-width: none;
-    /* Para navegadores que suportam isso (Firefox) */
-    -ms-overflow-style: none;
-    /* Para o Internet Explorer */
   }
 
   .projeto-cards::-webkit-scrollbar {
     display: none;
-    /* Para navegadores WebKit (Chrome, Safari) */
+    /* Esconde a barra de rolagem no Webkit (Chrome, Safari, Edge) */
+  }
+
+  /* Esconde a barra de rolagem no Firefox */
+  .projeto-cards {
+    scrollbar-width: none;
+    /* Esconde no Firefox */
   }
 
   .card {
@@ -544,12 +539,14 @@
     padding-top: 18px;
     box-sizing: content-box;
     margin-bottom: 10px;
-    flex-shrink: 0;
+    scroll-snap-align: start;
+    margin: 0 10px; /* Adiciona espaçamento entre os cards */
   }
 
   #index .card:last-of-type {
     gap: 30px;
     height: 279px;
+    margin-right: 60px;
   }
 
   #index .card:last-of-type a svg {
@@ -637,7 +634,7 @@
   }
 
   .projeto {
-    gap: 50px;
+    gap: 40px;
   }
 }
 
@@ -696,9 +693,9 @@
   opacity: 0;
   transition: opacity 0.3s;
   white-space: nowrap;
-  -webkit-box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
-  box-shadow: 1px -1px 13px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 1px -1px 13px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px -1px 13px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px -1px 13px 0px rgba(0, 0, 0, 0.1);
 }
 
 .skills-start picture:hover .tooltip-text {
@@ -955,6 +952,7 @@
     white-space: normal;
     font-size: 0.75rem;
   }
+
   .tooltip-text {
     font-size: 10px;
   }
