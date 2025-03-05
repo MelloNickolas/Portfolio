@@ -513,7 +513,7 @@
     gap: 10px;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 5px 40px; /* Adicionando mais padding para garantir o afastamento das bordas */
+    padding: 5px 10px; /* Adicionando mais padding para garantir o afastamento das bordas */
     margin: 0 auto; /* Garantir que a área de rolagem fique centralizada, se necessário */
     max-width: 100%;
     white-space: nowrap;
