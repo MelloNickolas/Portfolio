@@ -546,7 +546,7 @@
   #index .card:last-of-type {
     gap: 30px;
     height: 279px;
-    margin-right: 60px;
+    margin-right: 100px;
   }
 
   #index .card:last-of-type a svg {
