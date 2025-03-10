@@ -6,13 +6,12 @@ html ,body {
 }
 body{
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1 ease-in-out;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 /* Classe que faz a página aparecer suavemente */
 body.fade-in {
   opacity: 1;
-  transition: opacity 0.8s ease-in-out;
 }
 /* Classe que faz a página sumir antes da troca */
 body.fade-out {
