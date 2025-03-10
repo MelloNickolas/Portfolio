@@ -5,19 +5,9 @@ html ,body {
   width: 100%;
 }
 body{
-  opacity: 0;
-  transition: opacity 1 ease-in-out;
+  opacity: 1;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
-/* Classe que faz a página aparecer suavemente */
-body.fade-in {
-  opacity: 1;
-}
-/* Classe que faz a página sumir antes da troca */
-body.fade-out {
-  opacity: 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
